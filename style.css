@@ -119,3 +119,72 @@ th {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+/* SWOT GRID */
+.swot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* FLIP CARD */
+.swot-card {
+    perspective: 1000px;
+}
+
+.swot-inner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* FLIP EFFECT */
+.swot-card:hover .swot-inner {
+    transform: rotateY(180deg);
+}
+
+/* FRONT & BACK */
+.swot-front, .swot-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    backface-visibility: hidden;
+}
+
+/* FRONT */
+.swot-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* BACK */
+.swot-back {
+    transform: rotateY(180deg);
+    font-size: 14px;
+}
+
+/* WARNA + GLOW */
+.strength .swot-front { background: rgba(0,255,150,0.2); }
+.strength .swot-back { background: rgba(0,255,150,0.1); }
+
+.weakness .swot-front { background: rgba(255,0,0,0.2); }
+.weakness .swot-back { background: rgba(255,0,0,0.1); }
+
+.opportunity .swot-front { background: rgba(0,150,255,0.2); }
+.opportunity .swot-back { background: rgba(0,150,255,0.1); }
+
+.threat .swot-front { background: rgba(255,150,0,0.2); }
+.threat .swot-back { background: rgba(255,150,0,0.1); }
+
+/* HOVER GLOW */
+.strength:hover { box-shadow: 0 0 25px #00ffa2; }
+.weakness:hover { box-shadow: 0 0 25px #ff4d4d; }
+.opportunity:hover { box-shadow: 0 0 25px #3399ff; }
+.threat:hover { box-shadow: 0 0 25px #ffaa33; }
