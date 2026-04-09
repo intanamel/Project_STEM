@@ -1,125 +1,121 @@
-/* FONT & BASE */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #acb6e5);
-    color: #333;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color: white;
 }
 
 /* NAVBAR */
 .navbar {
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-}
-
-.navbar h1 {
-    color: white;
+    padding: 20px 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
 }
 
 .nav-links a {
-    color: white;
-    margin-left: 15px;
+    color: #00f7ff;
+    margin-left: 20px;
     text-decoration: none;
-    position: relative;
-}
-
-/* underline animasi */
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: white;
-    left: 0;
-    bottom: -3px;
     transition: 0.3s;
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+.nav-links a:hover {
+    text-shadow: 0 0 10px #00f7ff;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    color: white;
+    margin-top: 80px;
 }
 
-.hero h2 {
-    font-size: 40px;
+.hero h1 {
+    font-size: 50px;
+    background: linear-gradient(90deg, #00f7ff, #8a2be2);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .hero p {
     margin-top: 10px;
+    opacity: 0.8;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 20px;
-    background: white;
-    color: #16a085;
+    padding: 12px 25px;
     border-radius: 30px;
+    background: linear-gradient(90deg, #00f7ff, #8a2be2);
+    color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 20px #00f7ff;
 }
 
-/* GLASS CARD */
+/* CONTAINER */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-}
-
-section {
-    background: rgba(255,255,255,0.7);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-}
-
-section:hover {
-    transform: translateY(-8px);
+    max-width: 1000px;
+    margin: 50px auto;
 }
 
 /* CARD */
 .card {
-    background: white;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(0,255,255,0.5);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-th {
-    background: #16a085;
-    color: white;
+    background: rgba(255,255,255,0.05);
 }
 
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+    background: #8a2be2;
+}
+
+/* ANIMATION */
+.container {
+    animation: fade 1s ease;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
