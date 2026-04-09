@@ -1,74 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+/* RESET */
+* {
     margin: 0;
-    background-color: #f4f6f8;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Container utama */
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #16a085;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar h1 {
+    color: white;
+    text-align: center;
+}
+
+/* CONTAINER */
 .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* SECTION */
+section {
     background: white;
-    padding: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-/* Judul */
-h1 {
-    text-align: center;
-    color: #2c3e50;
+section:hover {
+    transform: translateY(-5px);
 }
 
-/* Subjudul */
+/* HEADINGS */
 h2 {
     color: #16a085;
-    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 h3 {
     color: #34495e;
 }
 
-/* Paragraf */
-p {
-    line-height: 1.6;
+/* LIST */
+ul li {
+    margin-bottom: 8px;
 }
 
-/* List */
-ul {
-    background: #ecf0f1;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-/* Card (Design Thinking) */
+/* CARD */
 .card {
-    background: #ffffff;
+    background: #f9f9f9;
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
     border-left: 5px solid #16a085;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
-/* Table SWOT */
+.card:hover {
+    background: #ecfdf5;
+}
+
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ccc;
 }
 
 th {
-    background-color: #16a085;
+    background: #16a085;
     color: white;
 }
 
-/* Garis */
-hr {
-    margin: 40px 0;
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #16a085;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #13856b;
+}
+
+/* ANIMATION */
+html {
+    scroll-behavior: smooth;
 }
