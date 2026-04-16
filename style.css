@@ -77,3 +77,51 @@ body {
     text-decoration: none;
     color: #065f46;
 }
+
+/* SDGs GRID */
+.sdgs {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sdgs h2 {
+    margin-bottom: 20px;
+    color: #6366f1;
+}
+
+.sdgs-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* BOX ICON */
+.sdg-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    transition: 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+/* HOVER */
+.sdg-item:hover {
+    transform: scale(1.05);
+}
+
+/* HIGHLIGHT SDG 4 */
+.highlight {
+    background: #c7d2fe;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sdgs-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
