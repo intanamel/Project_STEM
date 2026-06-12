@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solusi Akhir - SmartFun Learning Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Detail platform SmartFun Learning Corner, keunggulan pembelajaran adaptif, dan demo interaktif sistem gamifikasi.">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">SmartFun</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="fakta.html" class="nav-link">Fakta</a>
+            <a href="target.html" class="nav-link">Target</a>
+            <a href="swot.html" class="nav-link">SWOT</a>
+            <a href="proses.html" class="nav-link">Proses</a>
+            <a href="solusi.html" class="nav-link active">Solusi</a>
+            <a href="pitch.html" class="nav-link">Video Pitch</a>
+            <a href="refleksi.html" class="nav-link">Refleksi</a>
+            <a href="referensi.html" class="nav-link">Referensi</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+        </div>
+    </header>
+
+    <!-- HERO SMALL -->
+    <section class="hero-small">
+        <h1>✨ Solusi Akhir: SmartFun Learning Corner</h1>
+        <p>Aplikasi Pembelajaran Gamifikasi yang Adaptif untuk Literasi dan Numerasi Dasar</p>
+    </section>
+
+    <!-- KEUNGGULAN PLATFORM -->
+    <section class="container reveal">
+        <div class="section-header">
+            <h2 class="section-title">Mengapa Memilih SmartFun Learning Corner?</h2>
+            <p class="section-subtitle">Pilar-pilar penting yang membedakan platform kami dengan metode belajar konvensional.</p>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 5rem;">
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
+                <h3>Adaptif</h3>
+                <p>Materi kuis disesuaikan secara dinamis mengikuti kecepatan pemahaman anak. Bila anak kesulitan, tingkat kesulitan otomatis disesuaikan.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎮</div>
+                <h3>Menyenangkan</h3>
+                <p>Mengintegrasikan elemen psikologi game (skor, level, tantangan, lencana) agar motivasi belajar tumbuh dari dalam diri anak (intrinsik).</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🧠</div>
+                <h3>Berbasis Psikologi Anak</h3>
+                <p>Dirancang menggunakan prinsip perkembangan anak usia 8-12 tahun yang menyukai visual cerah, kompetisi positif, dan umpan balik langsung.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🇮🇩</div>
+                <h3>Sesuai Kurikulum Merdeka</h3>
+                <p>Mendukung pemulihan kompetensi dasar dan penguatan karakter Profil Pelajar Pancasila lewat pembelajaran mandiri yang aktif.</p>
+            </div>
+        </div>
+
+        <!-- INTERACTIVE FEATURES SHOWCASE -->
+        <div class="section-header">
+            <h2 class="section-title">Eksplorasi Fitur Platform</h2>
+            <p class="section-subtitle">Silakan klik menu tab di sebelah kiri untuk melihat detail fitur dan mencoba simulasi interaktif.</p>
+        </div>
+
+        <div class="solusi-interactive-showcase">
+            <div class="solusi-nav">
+                <div class="solusi-nav-item active" onclick="switchTab(0)">📖 Bacaan Interaktif</div>
+                <div class="solusi-nav-item" onclick="switchTab(1)">🔤 Game Literasi</div>
+                <div class="solusi-nav-item" onclick="switchTab(2)">🧮 Game Numerasi (Demo Kuis)</div>
+                <div class="solusi-nav-item" onclick="switchTab(3)">📊 Dashboard Perkembangan</div>
+            </div>
+            <div class="solusi-content-container">
+                
+                <!-- TAB 1: BACAAN INTERAKTIF -->
+                <div class="solusi-tab-panel active">
+                    <h3>📖 Petualangan Bacaan Interaktif</h3>
+                    <p style="margin-top: 1rem;">Bukan sekadar teks pasif. Cerita disajikan dengan ilustrasi bergambar yang hidup, suara pembaca latar (narasi), dan pilihan jalan cerita di mana siswa bisa memilih kelanjutan petualangan pahlawan mereka.</p>
+                    <div style="background-color: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-sm); border: 1px dashed var(--border-color); margin-top: 1.5rem;">
+                        <p style="font-style: italic; color: var(--text-muted);">"Di sebuah desa terpencil, Kiki menemukan pintu rahasia di bawah pohon jati besar. Kiki ingin membuka pintu tersebut, namun pintu dikunci oleh teka-teki kata..."</p>
+                        <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Bantu Kiki memecahkan teka-teki</button>
+                            <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Cari jalan memutar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: GAME LITERASI -->
+                <div class="solusi-tab-panel">
+                    <h3>🔤 Game Literasi Susun Kata</h3>
+                    <p style="margin-top: 1rem;">Membantu anak-anak memperkaya kosakata dan menyusun struktur kalimat dengan menarik. Siswa menyeret balok-balok kata acak untuk membentuk kalimat utuh yang logis dan bermakna.</p>
+                    <div style="background-color: var(--bg-light); padding: 1.5rem; border-radius: var(--radius-sm); border: 1px dashed var(--border-color); margin-top: 1.5rem; text-align: center;">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary-blue);">SUSUN KALIMAT YANG BENAR:</span>
+                        <div style="display: flex; justify-content: center; gap: 0.5rem; margin: 1rem 0;">
+                            <span style="background-color: var(--bg-card); padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">membaca</span>
+                            <span style="background-color: var(--bg-card); padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">Kiki</span>
+                            <span style="background-color: var(--bg-card); padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">buku</span>
+                            <span style="background-color: var(--bg-card); padding: 0.5rem 1rem; border: 1px solid var(--border-color); border-radius: 4px; cursor: pointer;">di perpustakaan</span>
+                        </div>
+                        <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Kirim Jawaban</button>
+                    </div>
+                </div>
+
+                <!-- TAB 3: GAME NUMERASI (DEMO PLAYABLE) -->
+                <div class="solusi-tab-panel">
+                    <h3>🧮 Uji Kemampuan: Demo Kuis Numerasi</h3>
+                    <p style="margin-top: 1rem;">Mari rasakan langsung pengalaman belajar tergamifikasi. Jawab tantangan numerasi matematika di bawah ini dengan benar untuk membuka lencana penghargaan!</p>
+                    
+                    <div class="quiz-mockup">
+                        <div class="quiz-header-bar">
+                            <span>Misi 1: Berhitung Kilat ⚡</span>
+                            <span id="quiz-badge-unlocked" style="color: var(--cyan); font-size: 0.9rem;">Lencana Terkunci 🔒</span>
+                        </div>
+                        <p style="font-size: 1.15rem; font-weight: 700; text-align: center; margin-bottom: 1.5rem;">Berapakah hasil dari 7 x 8 ?</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <button class="btn btn-secondary quiz-opt" onclick="checkAnswer(this, 48)">A. 48</button>
+                            <button class="btn btn-secondary quiz-opt" onclick="checkAnswer(this, 54)">B. 54</button>
+                            <button class="btn btn-secondary quiz-opt" onclick="checkAnswer(this, 56)">C. 56</button>
+                            <button class="btn btn-secondary quiz-opt" onclick="checkAnswer(this, 62)">D. 62</button>
+                        </div>
+                        <div id="quiz-feedback" style="margin-top: 1rem; font-weight: 700; text-align: center; min-height: 24px;"></div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: DASHBOARD PERKEMBANGAN -->
+                <div class="solusi-tab-panel">
+                    <h3>📊 Rapor & Lencana Perkembangan Belajar</h3>
+                    <p style="margin-top: 1rem;">Memetakan penguasaan materi anak secara visual. Orang tua dan guru bisa melihat grafik kompetensi membaca dan menghitung siswa, serta lencana yang telah dikumpulkan.</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <div style="margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 700;"><span>Kompetensi Membaca (Literasi)</span><span>80%</span></div>
+                            <div class="progress-bar-container" style="margin-top: 0.3rem;"><div class="progress-bar-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; font-weight: 700;"><span>Logika Angka (Numerasi)</span><span id="dash-num-perc">60%</span></div>
+                            <div class="progress-bar-container" style="margin-top: 0.3rem;"><div class="progress-bar-fill" id="dash-num-bar" style="width: 60%"></div></div>
+                        </div>
+                        
+                        <h4>Galeri Medali Keberhasilan</h4>
+                        <div class="badge-reward-showcase">
+                            <div class="badge-item unlocked">
+                                <div class="badge-medal">📖</div>
+                                <span style="font-size: 0.8rem; font-weight: 700;">Kutu Buku</span>
+                            </div>
+                            <div class="badge-item" id="medal-numerasi">
+                                <div class="badge-medal badge-medal-silver">🧮</div>
+                                <span style="font-size: 0.8rem; font-weight: 700;">Master Hitung</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>🎓 SmartFun Learning Corner</h2>
+                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fakta.html">Fakta & Data</a></li>
+                    <li><a href="target.html">Target SDGs</a></li>
+                    <li><a href="swot.html">Analisis SWOT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Proses & Solusi</h3>
+                <ul>
+                    <li><a href="proses.html">Design Thinking</a></li>
+                    <li><a href="solusi.html">Solusi Akhir</a></li>
+                    <li><a href="pitch.html">Video Pitch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dokumen & Lainnya</h3>
+                <ul>
+                    <li><a href="refleksi.html">Refleksi Proyek</a></li>
+                    <li><a href="referensi.html">Referensi APA 7</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+
+    <script src="main.js"></script>
+    <script>
+        // Tab switching logic
+        function switchTab(index) {
+            const tabs = document.querySelectorAll('.solusi-nav-item');
+            const panels = document.querySelectorAll('.solusi-tab-panel');
+            
+            tabs.forEach((tab, i) => {
+                if (i === index) {
+                    tab.classList.add('active');
+                    panels[i].classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                    panels[i].classList.remove('active');
+                }
+            });
+        }
+
+        // Playable Quiz Logic
+        let numerasiUnlocked = false;
+        function checkAnswer(btn, val) {
+            if (numerasiUnlocked) return; // Prevent clicking again if already solved
+            
+            const feedback = document.getElementById('quiz-feedback');
+            const statusText = document.getElementById('quiz-badge-unlocked');
+            const medal = document.getElementById('medal-numerasi');
+            const dashPerc = document.getElementById('dash-num-perc');
+            const dashBar = document.getElementById('dash-num-bar');
+            const options = document.querySelectorAll('.quiz-opt');
+
+            options.forEach(opt => opt.setAttribute('disabled', 'true'));
+
+            if (val === 56) {
+                btn.style.backgroundColor = '#22c55e'; // Green for correct
+                btn.style.color = 'white';
+                btn.style.borderColor = '#22c55e';
+                feedback.innerHTML = "🎉 Benar! Anda berhasil memecahkan teka-teki matematika.";
+                feedback.style.color = '#22c55e';
+                
+                // Unlock Lencana
+                statusText.innerHTML = "Lencana Terbuka! 🏆";
+                statusText.style.color = '#06b6d4';
+                if (medal) medal.classList.add('unlocked');
+                if (dashPerc) dashPerc.innerHTML = "100%";
+                if (dashBar) dashBar.style.width = "100%";
+                numerasiUnlocked = true;
+            } else {
+                btn.style.backgroundColor = '#ef4444'; // Red for incorrect
+                btn.style.color = 'white';
+                btn.style.borderColor = '#ef4444';
+                feedback.innerHTML = "❌ Salah. Jawaban yang benar adalah 56 (7 x 8 = 56). Coba lagi!";
+                feedback.style.color = '#ef4444';
+                
+                // Reset after 2 seconds to let them try again
+                setTimeout(() => {
+                    options.forEach(opt => {
+                        opt.removeAttribute('disabled');
+                        opt.style.backgroundColor = '';
+                        opt.style.color = '';
+                        opt.style.borderColor = '';
+                    });
+                    feedback.innerHTML = "";
+                }, 2500);
+            }
+        }
+    </script>
+</body>
+</html>

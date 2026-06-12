@@ -1,113 +1,189 @@
 <!DOCTYPE html>
-
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakta & Data SDG 4</title>
+    <title>Fakta & Data - SmartFun Learning Corner</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="5 Fakta utama mengenai kondisi dan tantangan pendidikan (SDG 4) di Indonesia.">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">🌍 SDGs Project</div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">SmartFun</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="fakta.html" class="nav-link active">Fakta</a>
+            <a href="target.html" class="nav-link">Target</a>
+            <a href="swot.html" class="nav-link">SWOT</a>
+            <a href="proses.html" class="nav-link">Proses</a>
+            <a href="solusi.html" class="nav-link">Solusi</a>
+            <a href="pitch.html" class="nav-link">Video Pitch</a>
+            <a href="refleksi.html" class="nav-link">Refleksi</a>
+            <a href="referensi.html" class="nav-link">Referensi</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+        </div>
+    </header>
 
-```
-<nav>
-    <a href="index.html">Home</a>
-    <a href="fakta.html">Fakta</a>
-    <a href="target.html">Target</a>
-    <a href="proses.html">Proses</a>
-    <a href="swot.html">SWOT</a>
-</nav>
-```
+    <!-- HERO SMALL -->
+    <section class="hero-small">
+        <h1>📊 Fakta & Data Pendidikan</h1>
+        <p>Tantangan Nyata dalam Mewujudkan Pendidikan Berkualitas (SDG 4) di Indonesia</p>
+    </section>
 
-</header>
+    <!-- FACTS CONTAINER -->
+    <section class="container reveal">
+        <div class="section-header">
+            <h2 class="section-title">5 Fakta Utama Pendidikan Indonesia</h2>
+            <p class="section-subtitle">Data dan realita lapangan yang mendasari pentingnya intervensi teknologi dalam
+                akselerasi literasi dan numerasi siswa.</p>
+        </div>
 
-<section class="hero-small">
-    <h1>📊 Fakta & Data SDG 4</h1>
-    <p>Pendidikan Berkualitas di Indonesia</p>
-</section>
+        <div class="grid-3">
+            <!-- FAKTA 1 -->
+            <div class="card fact-card">
+                <span class="fact-badge">Fakta 1</span>
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏫</div>
+                <h3>APK Perguruan Tinggi Indonesia 31.45%</h3>
+                <p>Angka Partisipasi Kasar (APK) Perguruan Tinggi di Indonesia masih tertahan di
+                    <strong>31.45%</strong>. Angka ini menandakan bahwa dari seluruh lulusan menengah, hanya sebagian
+                    kecil yang berhasil melanjutkan studi ke jenjang pendidikan tinggi akibat keterbatasan biaya maupun
+                    aksesibilitas.
+                </p>
+                <div class="progress-bar-container">
+                    <!-- The style width will be handled via JS/CSS. We can set style="width: 31.45%" directly for static fallback, but let's make it look beautiful -->
+                    <div class="progress-bar-fill" style="width: 31.45%"></div>
+                </div>
+                <small style="color: var(--text-muted); font-weight: 700;">Target Nasional: > 40%</small>
+            </div>
 
-<section class="fact-container">
+            <!-- FAKTA 2 -->
+            <div class="card fact-card">
+                <span class="fact-badge">Fakta 2</span>
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📝</div>
+                <h3>Skor PISA 2022 Di Bawah Rata-Rata</h3>
+                <p>Hasil penilaian PISA (Programme for International Student Assessment) 2022 menunjukkan skor membaca,
+                    matematika, dan sains siswa Indonesia secara konsisten berada di bawah rata-rata negara anggota
+                    OECD, mengindikasikan adanya kendala besar pada pemahaman literasi dasar.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 75%"></div>
+                </div>
+                <small style="color: var(--text-muted); font-weight: 700;">Peringkat: 69 dari 81 Negara</small>
+            </div>
 
-```
-<div class="fact-card">
-    <span class="fact-number">31.45%</span>
-    <h3>Akses Perguruan Tinggi</h3>
-    <p>
-        Angka Partisipasi Kasar (APK) perguruan tinggi Indonesia
-        tahun 2023 baru mencapai sekitar 31,45%.
-        Hal ini menunjukkan masih adanya kesenjangan
-        akses pendidikan tinggi.
-    </p>
-</div>
+            <!-- FAKTA 3 -->
+            <div class="card fact-card">
+                <span class="fact-badge">Fakta 3</span>
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🗺️</div>
+                <h3>Kesenjangan Daerah 3T</h3>
+                <p>Sekolah di daerah Tertinggal, Terdepan, dan Terluar (3T) mengalami kesenjangan sarana prasarana yang
+                    ekstrem. Minimnya jaringan internet, laboratorium komputer, dan buku cetak berkualitas menghambat
+                    penerapan pembelajaran berbasis digital yang inklusif.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 60%"></div>
+                </div>
+                <small style="color: var(--text-muted); font-weight: 700;">Kesenjangan Infrastruktur Digital</small>
+            </div>
 
-<div class="fact-card">
-    <span class="fact-number">PISA 2022</span>
-    <h3>Literasi & Numerasi</h3>
-    <p>
-        Kemampuan membaca, matematika, dan sains siswa Indonesia
-        masih berada di bawah rata-rata negara OECD sehingga
-        diperlukan peningkatan kualitas pembelajaran.
-    </p>
-</div>
+            <!-- FAKTA 4 -->
+            <div class="card fact-card">
+                <span class="fact-badge">Fakta 4</span>
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">👨‍🏫</div>
+                <h3>Kualitas & Distribusi Guru</h3>
+                <p>Penyebaran guru berkualitas belum merata secara geografis. Guru-guru di daerah pedesaan dan terpencil
+                    sering kali tidak mendapatkan pelatihan kompetensi pedagogis dan digital yang setara dengan rekan
+                    sejawatnya di perkotaan.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 55%"></div>
+                </div>
+                <small style="color: var(--text-muted); font-weight: 700;">Ketimpangan Distribusi Guru Kompeten</small>
+            </div>
 
-<div class="fact-card">
-    <span class="fact-number">3T</span>
-    <h3>Kesenjangan Fasilitas</h3>
-    <p>
-        Banyak sekolah di daerah tertinggal,
-        terdepan dan terluar masih belum memiliki
-        akses internet maupun laboratorium komputer
-        yang memadai.
-    </p>
-</div>
+            <!-- FAKTA 5 -->
+            <div class="card fact-card" style="grid-column: span 2;">
+                <span class="fact-badge">Fakta 5</span>
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🦠</div>
+                <h3>Learning Loss Pasca Pandemi</h3>
+                <p>Pembelajaran jarak jauh yang kurang optimal selama pandemi COVID-19 menimbulkan penurunan capaian
+                    belajar (learning loss) yang serius, khususnya bagi anak-anak dari latar belakang ekonomi rentan.
+                    Keterampilan membaca dasar dan matematika dasar mengalami penurunan yang perlu dipulihkan secara
+                    intensif lewat metode pembelajaran yang adaptif.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 80%"></div>
+                </div>
+                <small style="color: var(--text-muted); font-weight: 700;">Penurunan Kompetensi Pembelajaran
+                    Dasar</small>
+            </div>
+        </div>
 
-<div class="fact-card">
-    <span class="fact-number">Guru</span>
-    <h3>Kualitas Pendidik</h3>
-    <p>
-        Distribusi guru yang belum merata serta
-        perbedaan kualitas tenaga pendidik menjadi
-        tantangan utama pemerataan pendidikan.
-    </p>
-</div>
+        <!-- SUMMARY CARD -->
+        <div class="card"
+            style="margin-top: 3rem; background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(6, 182, 212, 0.03));">
+            <h3 style="display: flex; align-items: center; gap: 0.8rem;">💡 Kesimpulan Analisis Data</h3>
+            <p>Data di atas memperlihatkan hambatan struktural yang berantai. Keterbatasan akses perguruan tinggi
+                dimulai dari rapuhnya fondasi literasi dan numerasi di tingkat dasar. Apabila kesenjangan sarana digital
+                di daerah 3T dan kualitas guru terus dibiarkan, maka learning loss pasca pandemi akan terus meluas.
+                Solusi inovatif seperti <strong>SmartFun Learning Corner</strong> dirancang khusus untuk memotong rantai
+                masalah ini dengan menyediakan materi literasi-numerasi yang merata, fleksibel, dan terjangkau.</p>
+        </div>
+    </section>
 
-<div class="fact-card">
-    <span class="fact-number">COVID-19</span>
-    <h3>Learning Loss</h3>
-    <p>
-        Pasca pandemi, banyak siswa mengalami
-        penurunan kompetensi akibat pembelajaran
-        jarak jauh yang tidak merata.
-    </p>
-</div>
-```
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>🎓 SmartFun Learning Corner</h2>
+                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi
+                    Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fakta.html">Fakta & Data</a></li>
+                    <li><a href="target.html">Target SDGs</a></li>
+                    <li><a href="swot.html">Analisis SWOT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Proses & Solusi</h3>
+                <ul>
+                    <li><a href="proses.html">Design Thinking</a></li>
+                    <li><a href="solusi.html">Solusi Akhir</a></li>
+                    <li><a href="pitch.html">Video Pitch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dokumen & Lainnya</h3>
+                <ul>
+                    <li><a href="refleksi.html">Refleksi Proyek</a></li>
+                    <li><a href="referensi.html">Referensi APA 7</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+        </div>
+    </footer>
 
-</section>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
 
-<section class="summary">
-
-```
-<h2>Kesimpulan</h2>
-
-<p>
-    Data menunjukkan bahwa Indonesia masih menghadapi
-    berbagai tantangan dalam mencapai SDG 4,
-    terutama pada aspek akses pendidikan tinggi,
-    kualitas literasi dan numerasi,
-    pemerataan fasilitas pendidikan,
-    kualitas tenaga pendidik,
-    serta dampak learning loss pasca pandemi.
-</p>
-```
-
-</section>
-
-<footer>
-    <p>© 2026 SDGs Project | Intan Ameliya</p>
-</footer>
-
+    <script src="main.js"></script>
 </body>
+
 </html>

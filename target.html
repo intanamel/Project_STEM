@@ -1,176 +1,140 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Target SDGs</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target SDGs - SmartFun Learning Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Penjelasan mendalam mengenai Target SDG 4.6 (Literasi & Numerasi) dan Target SDG 8.5 (Pekerjaan Layak) dalam proyek STEM kami.">
 </head>
 <body>
 
-<header>
-    <div class="logo">🎯 SDGs Project</div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">SmartFun</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="fakta.html" class="nav-link">Fakta</a>
+            <a href="target.html" class="nav-link active">Target</a>
+            <a href="swot.html" class="nav-link">SWOT</a>
+            <a href="proses.html" class="nav-link">Proses</a>
+            <a href="solusi.html" class="nav-link">Solusi</a>
+            <a href="pitch.html" class="nav-link">Video Pitch</a>
+            <a href="refleksi.html" class="nav-link">Refleksi</a>
+            <a href="referensi.html" class="nav-link">Referensi</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+        </div>
+    </header>
 
-```
-<nav>
-    <a href="index.html">Home</a>
-    <a href="fakta.html">Fakta</a>
-    <a href="target.html">Target</a>
-    <a href="proses.html">Proses</a>
-    <a href="swot.html">SWOT</a>
-</nav>
-```
+    <!-- HERO SMALL -->
+    <section class="hero-small">
+        <h1>🎯 Target SDGs Proyek</h1>
+        <p>Sasaran Utama Pembangunan Berkelanjutan yang Menjadi Komitmen Kami</p>
+    </section>
 
-</header>
+    <!-- TARGETS DETAIL CONTAINER -->
+    <section class="container reveal">
+        <div class="section-header">
+            <h2 class="section-title">Sasaran Utama & Indikator</h2>
+            <p class="section-subtitle">Dua target fundamental yang saling berkelindan untuk menciptakan generasi penerus yang berdaya saing global.</p>
+        </div>
 
-<section class="hero-small">
-    <h1>Target SDGs yang Dipilih</h1>
-    <p>
-        Fokus proyek ini adalah meningkatkan literasi, numerasi,
-        dan kesiapan kerja masyarakat Indonesia.
-    </p>
-</section>
+        <div class="grid-2">
+            <!-- TARGET 4.6 CARD -->
+            <div class="card target-card">
+                <span class="target-badge-sdg badge-sdg4">📚 SDG 4: Pendidikan Berkualitas</span>
+                <h2>Target 4.6: Literasi & Numerasi</h2>
+                <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--text-main);">
+                    "Memastikan bahwa semua remaja dan proporsi signifikan orang dewasa, baik laki-laki maupun perempuan, mencapai kemampuan literasi dan numerasi pada tahun 2030."
+                </p>
+                <div class="card" style="padding: 1.5rem; margin-bottom: 1rem; background-color: var(--bg-light); border: none;">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-blue);">📍 Indikator Keberhasilan PBB</h4>
+                    <p style="font-size: 0.9rem;">Proporsi populasi dalam kelompok umur tertentu yang mencapai setidaknya tingkat kemahiran minimum dalam keterampilan fungsional (a) membaca dan (b) matematika.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem; background-color: var(--bg-light); border: none;">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--cyan);">🚀 Aksi Strategis Proyek</h4>
+                    <p style="font-size: 0.9rem;">Mengembangkan platform pembelajaran gamifikasi yang menyesuaikan tingkat pemahaman anak secara adaptif, membuat belajar membaca dan berhitung terasa seperti bermain game.</p>
+                </div>
+            </div>
 
-<!-- TARGET 4.6 -->
+            <!-- TARGET 8.5 CARD -->
+            <div class="card target-card">
+                <span class="target-badge-sdg badge-sdg8">💼 SDG 8: Pekerjaan Layak & Pertumbuhan Ekonomi</span>
+                <h2>Target 8.5: Pekerjaan Layak untuk Semua</h2>
+                <p style="font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; color: var(--text-main);">
+                    "Mencapai pekerjaan yang layak dan produktif bagi semua perempuan dan laki-laki, termasuk bagi kaum muda dan penyandang disabilitas, serta upah yang sama untuk pekerjaan yang bernilai sama pada tahun 2030."
+                </p>
+                <div class="card" style="padding: 1.5rem; margin-bottom: 1rem; background-color: var(--bg-light); border: none;">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-blue);">📍 Indikator Keberhasilan PBB</h4>
+                    <p style="font-size: 0.9rem;">Tingkat upah rata-rata per jam karyawan, tingkat pengangguran berdasarkan umur dan jenis kelamin, serta inklusivitas pekerja penyandang disabilitas.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem; background-color: var(--bg-light); border: none;">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--cyan);">🚀 Aksi Strategis Proyek</h4>
+                    <p style="font-size: 0.9rem;">Mempersiapkan bekal keterampilan kerja esensial melalui stimulasi pemecahan masalah (problem-solving) dan logika berpikir matematis sejak dini guna mencegah mismatch keahlian.</p>
+                </div>
+            </div>
+        </div>
 
-<section class="target-section">
+        <!-- HIGHLIGHT CARD -->
+        <div class="card" style="margin-top: 3rem; background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(6, 182, 212, 0.03)); text-align: center;">
+            <h3>🌟 Mengapa Target Ini Menjadi Sorotan Utama Kami?</h3>
+            <p style="max-width: 800px; margin: 1rem auto 0 auto; line-height: 1.8;">
+                Kami percaya bahwa kesiapan kerja (Target 8.5) bukanlah keterampilan yang instan dibentuk saat usia dewasa, melainkan hasil akumulasi pendidikan berkualitas yang matang (Target 4.6). Seseorang yang memiliki kemampuan literasi fungsional dan numerasi yang logis akan jauh lebih adaptif terhadap teknologi baru, mampu memecahkan masalah industri yang rumit, dan akhirnya memperoleh pekerjaan yang layak di tengah era otomatisasi saat ini.
+            </p>
+        </div>
+    </section>
 
-<div class="target-header">
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>🎓 SmartFun Learning Corner</h2>
+                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fakta.html">Fakta & Data</a></li>
+                    <li><a href="target.html">Target SDGs</a></li>
+                    <li><a href="swot.html">Analisis SWOT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Proses & Solusi</h3>
+                <ul>
+                    <li><a href="proses.html">Design Thinking</a></li>
+                    <li><a href="solusi.html">Solusi Akhir</a></li>
+                    <li><a href="pitch.html">Video Pitch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dokumen & Lainnya</h3>
+                <ul>
+                    <li><a href="refleksi.html">Refleksi Proyek</a></li>
+                    <li><a href="referensi.html">Referensi APA 7</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+        </div>
+    </footer>
 
-```
-<div class="target-icon">
-    4️⃣
-</div>
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
 
-<div>
-    <h2>Target 4.6</h2>
-
-    <p>
-        Memastikan semua remaja dan proporsi signifikan orang dewasa
-        mencapai literasi dan numerasi pada tahun 2030.
-    </p>
-</div>
-```
-
-</div>
-
-<div class="swot-grid">
-
-```
-<div class="swot-card strength">
-    <h3>💪 Strength</h3>
-    <p>
-        Pemerintah telah mengimplementasikan Kurikulum Merdeka
-        yang fokus pada literasi dasar.
-        Angka melek aksara nasional telah mencapai lebih dari 96%.
-    </p>
-</div>
-
-<div class="swot-card weakness">
-    <h3>⚠ Weakness</h3>
-    <p>
-        Skor PISA 2022 menunjukkan kemampuan literasi
-        dan numerasi Indonesia masih berada di bawah
-        rata-rata OECD.
-    </p>
-</div>
-
-<div class="swot-card opportunity">
-    <h3>🚀 Opportunity</h3>
-    <p>
-        Platform digital seperti Merdeka Mengajar
-        dan perluasan internet membuka peluang
-        peningkatan literasi nasional.
-    </p>
-</div>
-
-<div class="swot-card threat">
-    <h3>🔥 Threat</h3>
-    <p>
-        Kesenjangan pendidikan antara Jawa dan luar Jawa
-        masih cukup tinggi sehingga menghambat pemerataan.
-    </p>
-</div>
-```
-
-</div>
-
-</section>
-
-<!-- TARGET 8.5 -->
-
-<section class="target-section">
-
-<div class="target-header">
-
-```
-<div class="target-icon">
-    8️⃣
-</div>
-
-<div>
-    <h2>Target 8.5</h2>
-
-    <p>
-        Mencapai pekerjaan layak bagi semua perempuan
-        dan laki-laki termasuk kaum muda dan penyandang disabilitas.
-    </p>
-</div>
-```
-
-</div>
-
-<div class="swot-grid">
-
-```
-<div class="swot-card strength">
-    <h3>💪 Strength</h3>
-
-    <p>
-        Pertumbuhan ekonomi Indonesia sekitar 5%
-        menciptakan lapangan kerja baru di sektor
-        digital dan kreatif.
-    </p>
-</div>
-
-<div class="swot-card weakness">
-    <h3>⚠ Weakness</h3>
-
-    <p>
-        Tingkat pengangguran lulusan SMK dan Diploma
-        masih tinggi karena mismatch keterampilan.
-    </p>
-</div>
-
-<div class="swot-card opportunity">
-    <h3>🚀 Opportunity</h3>
-
-    <p>
-        Bonus demografi memberikan tenaga kerja muda
-        yang besar dan potensial untuk meningkatkan
-        produktivitas nasional.
-    </p>
-</div>
-
-<div class="swot-card threat">
-    <h3>🔥 Threat</h3>
-
-    <p>
-        Automasi dan Artificial Intelligence (AI)
-        mengancam pekerjaan rutin serta meningkatkan
-        persaingan kerja.
-    </p>
-</div>
-```
-
-</div>
-
-</section>
-
-<footer>
-    <p>© 2026 SDGs Project | Intan Ameliya</p>
-</footer>
-
+    <script src="main.js"></script>
 </body>
 </html>

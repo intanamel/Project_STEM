@@ -1,159 +1,182 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SWOT Analysis</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT Analysis - SmartFun Learning Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Analisis SWOT mendalam untuk Target SDG 4.6 (Literasi & Numerasi) dan Target SDG 8.5 (Pekerjaan Layak).">
 </head>
-
 <body>
 
-<div class="navbar">
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">SmartFun</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="fakta.html" class="nav-link">Fakta</a>
+            <a href="target.html" class="nav-link">Target</a>
+            <a href="swot.html" class="nav-link active">SWOT</a>
+            <a href="proses.html" class="nav-link">Proses</a>
+            <a href="solusi.html" class="nav-link">Solusi</a>
+            <a href="pitch.html" class="nav-link">Video Pitch</a>
+            <a href="refleksi.html" class="nav-link">Refleksi</a>
+            <a href="referensi.html" class="nav-link">Referensi</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+        </div>
+    </header>
 
-```
-<h1>🌍 SDGs Project</h1>
+    <!-- HERO SMALL -->
+    <section class="hero-small">
+        <h1>📈 Analisis SWOT SDGs</h1>
+        <p>Evaluasi Komprehensif Terhadap Faktor Internal dan Eksternal Target SDGs</p>
+    </section>
 
-<div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="fakta.html">Fakta</a>
-    <a href="target.html">Target</a>
-    <a href="proses.html">Proses</a>
-    <a href="swot.html">SWOT</a>
-</div>
-```
-
-</div>
-
-<div class="hero-small">
-
-```
-<h1>📈 SWOT Analysis</h1>
-
-<p>
-    Analisis SWOT untuk Target SDG yang dipilih
-</p>
-```
-
-</div>
-
-<div class="container">
-
-```
-<!-- TARGET 4.6 -->
-
-<section>
-
-    <div class="card">
-
-        <h2>🎯 Target 4.6 - Literasi dan Numerasi</h2>
-
-        <div class="swot-grid">
-
-            <div class="swot strength">
-                <h3>💪 Strength</h3>
-
-                <p>
-                    Kurikulum Merdeka telah diterapkan dan
-                    angka melek aksara Indonesia sudah
-                    mencapai lebih dari 96%.
-                </p>
-            </div>
-
-            <div class="swot weakness">
-                <h3>⚠ Weakness</h3>
-
-                <p>
-                    Skor PISA 2022 menunjukkan kemampuan
-                    literasi dan numerasi siswa Indonesia
-                    masih berada di bawah rata-rata OECD.
-                </p>
-            </div>
-
-            <div class="swot opportunity">
-                <h3>🚀 Opportunity</h3>
-
-                <p>
-                    Platform digital seperti Merdeka Mengajar
-                    dan akses internet yang semakin luas dapat
-                    mendukung peningkatan kualitas pendidikan.
-                </p>
-            </div>
-
-            <div class="swot threat">
-                <h3>🔥 Threat</h3>
-
-                <p>
-                    Kesenjangan kualitas pendidikan antara
-                    wilayah Jawa dan luar Jawa masih tinggi.
-                </p>
-            </div>
-
+    <!-- SWOT CONTENT -->
+    <section class="container reveal">
+        
+        <!-- TARGET 4.6 SECTION -->
+        <div class="section-header">
+            <h2 class="section-title">SWOT: Target 4.6 (Literasi & Numerasi)</h2>
+            <p class="section-subtitle">Analisis faktor pendukung dan penghambat dalam mencapai literasi fungsional nasional pada tahun 2030.</p>
         </div>
 
-    </div>
-
-</section>
-
-<!-- TARGET 8.5 -->
-
-<section>
-
-    <div class="card">
-
-        <h2>🎯 Target 8.5 - Pekerjaan Layak</h2>
-
-        <div class="swot-grid">
-
-            <div class="swot strength">
+        <div class="swot-grid" style="margin-bottom: 5rem;">
+            <!-- STRENGTH -->
+            <div class="swot-card" style="--swot-bg: var(--swot-s-bg); --swot-text: var(--swot-s-text); --swot-border: var(--swot-s-border);">
                 <h3>💪 Strength</h3>
-
                 <p>
-                    Pertumbuhan ekonomi Indonesia sekitar 5%
-                    menciptakan peluang kerja baru terutama
-                    di sektor digital dan kreatif.
+                    <strong>Dukungan Kurikulum Nasional:</strong> Adanya Kurikulum Merdeka yang memberikan keleluasaan bagi guru untuk fokus pada materi esensial literasi dan numerasi dasar.<br><br>
+                    <strong>Angka Melek Huruf Tinggi:</strong> Secara kuantitatif, angka melek huruf nasional Indonesia sudah melampaui 96%, menjadi modal sosial yang besar.
                 </p>
             </div>
 
-            <div class="swot weakness">
+            <!-- WEAKNESS -->
+            <div class="swot-card" style="--swot-bg: var(--swot-w-bg); --swot-text: var(--swot-w-text); --swot-border: var(--swot-w-border);">
                 <h3>⚠ Weakness</h3>
-
                 <p>
-                    Tingkat pengangguran lulusan SMK dan
-                    Diploma masih tinggi akibat mismatch
-                    keterampilan dengan kebutuhan industri.
+                    <strong>Skor PISA Rendah:</strong> Kualitas literasi fungsional masih rendah. Siswa mampu mengeja kata namun lemah dalam memahami makna bacaan mendalam dan logika matematika.<br><br>
+                    <strong>Metode Konvensional:</strong> Pendekatan pembelajaran literasi dan numerasi sering kali terasa membosankan dan kurang interaktif bagi anak-anak.
                 </p>
             </div>
 
-            <div class="swot opportunity">
+            <!-- OPPORTUNITY -->
+            <div class="swot-card" style="--swot-bg: var(--swot-o-bg); --swot-text: var(--swot-o-text); --swot-border: var(--swot-o-border);">
                 <h3>🚀 Opportunity</h3>
-
                 <p>
-                    Bonus demografi memberikan potensi
-                    tenaga kerja muda yang besar untuk
-                    meningkatkan produktivitas nasional.
+                    <strong>Akselerasi Teknologi:</strong> Penetrasi smartphone yang tinggi di kalangan keluarga dapat dimanfaatkan sebagai media belajar alternatif di luar jam sekolah.<br><br>
+                    <strong>Kolaborasi EdTech:</strong> Peluang integrasi platform gamifikasi interaktif ke dalam kegiatan belajar mandiri siswa di rumah.
                 </p>
             </div>
 
-            <div class="swot threat">
+            <!-- THREAT -->
+            <div class="swot-card" style="--swot-bg: var(--swot-t-bg); --swot-text: var(--swot-t-text); --swot-border: var(--swot-t-border);">
                 <h3>🔥 Threat</h3>
-
                 <p>
-                    Automasi dan Artificial Intelligence
-                    mengancam pekerjaan rutin serta
-                    meningkatkan persaingan kerja.
+                    <strong>Kesenjangan Infrastruktur 3T:</strong> Akses internet dan kepemilikan gawai masih timpang antara wilayah perkotaan dan pelosok.<br><br>
+                    <strong>Dampak Covid-19 Persistent:</strong> Learning loss yang tidak ditangani dengan cepat berpotensi melahirkan generasi yang tertinggal dalam kecakapan kognitif dasar.
                 </p>
             </div>
-
         </div>
 
-    </div>
 
-</section>
-```
+        <!-- TARGET 8.5 SECTION -->
+        <div class="section-header">
+            <h2 class="section-title">SWOT: Target 8.5 (Pekerjaan Layak)</h2>
+            <p class="section-subtitle">Analisis kesiapan angkatan kerja dan tantangan makroekonomi dalam mewujudkan pekerjaan yang produktif dan adil.</p>
+        </div>
 
-</div>
+        <div class="swot-grid">
+            <!-- STRENGTH -->
+            <div class="swot-card" style="--swot-bg: var(--swot-s-bg); --swot-text: var(--swot-s-text); --swot-border: var(--swot-s-border);">
+                <h3>💪 Strength</h3>
+                <p>
+                    <strong>Ekonomi yang Tangguh:</strong> Pertumbuhan ekonomi Indonesia yang stabil di angka ~5% per tahun merangsang terciptanya peluang lapangan kerja baru.<br><br>
+                    <strong>Sektor Kreatif Kuat:</strong> Tingginya daya adaptasi talenta muda lokal dalam merintis usaha kreatif dan ekosistem startup mandiri.
+                </p>
+            </div>
 
+            <!-- WEAKNESS -->
+            <div class="swot-card" style="--swot-bg: var(--swot-w-bg); --swot-text: var(--swot-w-text); --swot-border: var(--swot-w-border);">
+                <h3>⚠ Weakness</h3>
+                <p>
+                    <strong>Skill Mismatch:</strong> Tingginya angka pengangguran lulusan vokasi (SMK/Diploma) karena keahlian yang diajarkan di sekolah tidak sesuai kebutuhan industri.<br><br>
+                    <strong>Soft Skills & Logika Lemah:</strong> Banyak calon pekerja kurang menguasai critical thinking, pemecahan masalah kompleks, dan literasi data dasar.
+                </p>
+            </div>
+
+            <!-- OPPORTUNITY -->
+            <div class="swot-card" style="--swot-bg: var(--swot-o-bg); --swot-text: var(--swot-o-text); --swot-border: var(--swot-o-border);">
+                <h3>🚀 Opportunity</h3>
+                <p>
+                    <strong>Bonus Demografi:</strong> Melimpahnya angkatan kerja usia muda produktif yang berpotensi melipatgandakan produktivitas ekonomi nasional.<br><br>
+                    <strong>Global Remote Work:</strong> Trend pekerjaan jarak jauh lintas negara membuka peluang karir global bagi talenta lokal yang terampil.
+                </p>
+            </div>
+
+            <!-- THREAT -->
+            <div class="swot-card" style="--swot-bg: var(--swot-t-bg); --swot-text: var(--swot-t-text); --swot-border: var(--swot-t-border);">
+                <h3>🔥 Threat</h3>
+                <p>
+                    <strong>Otomatisasi & AI:</strong> Pekerjaan klerikal, administratif, dan rutin terancam digantikan oleh teknologi AI dalam waktu dekat.<br><br>
+                    <strong>Kompetisi Pekerja Asing:</strong> Persaingan kerja global menuntut standar keterampilan yang tinggi agar tenaga kerja lokal tidak tersisih.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>🎓 SmartFun Learning Corner</h2>
+                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fakta.html">Fakta & Data</a></li>
+                    <li><a href="target.html">Target SDGs</a></li>
+                    <li><a href="swot.html">Analisis SWOT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Proses & Solusi</h3>
+                <ul>
+                    <li><a href="proses.html">Design Thinking</a></li>
+                    <li><a href="solusi.html">Solusi Akhir</a></li>
+                    <li><a href="pitch.html">Video Pitch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dokumen & Lainnya</h3>
+                <ul>
+                    <li><a href="refleksi.html">Refleksi Proyek</a></li>
+                    <li><a href="referensi.html">Referensi APA 7</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+
+    <script src="main.js"></script>
 </body>
 </html>

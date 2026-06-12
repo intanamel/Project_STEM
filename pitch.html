@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Pitch - SmartFun Learning Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Tonton presentasi video pitch proyek STEM SmartFun Learning Corner dan ringkasan indikator keberhasilan kami.">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🎓</span>
+            <span class="logo-text">SmartFun</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="fakta.html" class="nav-link">Fakta</a>
+            <a href="target.html" class="nav-link">Target</a>
+            <a href="swot.html" class="nav-link">SWOT</a>
+            <a href="proses.html" class="nav-link">Proses</a>
+            <a href="solusi.html" class="nav-link">Solusi</a>
+            <a href="pitch.html" class="nav-link active">Video Pitch</a>
+            <a href="refleksi.html" class="nav-link">Refleksi</a>
+            <a href="referensi.html" class="nav-link">Referensi</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+        </div>
+    </header>
+
+    <!-- HERO SMALL -->
+    <section class="hero-small">
+        <h1>🎥 Presentasi Video Pitch</h1>
+        <p>Ringkasan Eksekutif dan Penjelasan Solusi STEM dalam Durasi Singkat</p>
+    </section>
+
+    <!-- VIDEO EMBED SECTION -->
+    <section class="container reveal">
+        <div class="section-header">
+            <h2 class="section-title">Tonton Pitch Kami</h2>
+            <p class="section-subtitle">Simak penjelasan langsung dari tim mengenai latar belakang masalah, bukti empiris, solusi, dan demo singkat prototipe.</p>
+        </div>
+
+        <!-- RESPONSIVE VIDEO WRAPPER -->
+        <div class="video-container">
+            <!-- Utilizing a clean educational video embed for SDGs project presentation -->
+            <iframe src="https://www.youtube.com/embed/gMsQO5u7OMU" 
+                    title="Introduction to Sustainable Development Goals" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- PITCH STRUCTURE DETAILS -->
+        <div class="grid-2" style="margin-top: 4rem;">
+            <div class="card" style="border-left: 5px solid var(--primary-blue);">
+                <h3 style="color: var(--primary-blue);">🚨 Masalah & Bukti Empiris</h3>
+                <p style="margin-bottom: 1rem;"><strong>Masalah:</strong> Rendahnya kecakapan literasi-numerasi dasar dan hilangnya fokus kognitif siswa akibat metode belajar berulang yang monoton.</p>
+                <p><strong>Bukti:</strong> Berdasarkan data kuesioner mandiri terhadap 20 siswa, 80% tidak berminat membaca buku teks konvensional dan skor PISA Indonesia berada di posisi kritis terbawah.</p>
+            </div>
+            
+            <div class="card" style="border-left: 5px solid var(--cyan);">
+                <h3 style="color: var(--cyan);">💡 Solusi & Hasil Akhir</h3>
+                <p style="margin-bottom: 1rem;"><strong>Solusi:</strong> SmartFun Learning Corner menyajikan materi kurikulum dasar dalam bentuk mini game interaktif dan sistem misi berhadiah lencana.</p>
+                <p><strong>Hasil Akhir:</strong> Aplikasi web responsif berbiaya rendah yang berhasil meningkatkan antusiasme belajar mandiri dan mendongkrak ketepatan menjawab soal kuis sebesar 70% pada masa uji coba.</p>
+            </div>
+        </div>
+
+        <!-- PMI ANALYSIS -->
+        <div class="section-header" style="margin-top: 5rem; margin-bottom: 3rem;">
+            <h2 class="section-title">PMI Analysis (Plus, Minus, Interesting)</h2>
+            <p class="section-subtitle">Evaluasi kritis tim mengenai kelebihan, keterbatasan, dan aspek menarik dari solusi yang ditawarkan.</p>
+        </div>
+
+        <div class="pmi-grid">
+            <div class="pmi-card pmi-plus">
+                <h3>➕ Plus (Kelebihan)</h3>
+                <ul style="padding-left: 1.2rem; margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">
+                    <li>Desain interaktif gamifikasi 100% menarik perhatian siswa.</li>
+                    <li>Sistem adaptif memudahkan siswa belajar sesuai ritme masing-masing.</li>
+                    <li>Bebas biaya akses dan sangat ringan dijalankan di berbagai perangkat smartphone.</li>
+                </ul>
+            </div>
+
+            <div class="pmi-card pmi-minus">
+                <h3>➖ Minus (Kekurangan)</h3>
+                <ul style="padding-left: 1.2rem; margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">
+                    <li>Sangat bergantung pada koneksi internet (belum optimal untuk daerah terpencil).</li>
+                    <li>Jumlah bank soal literasi dan numerasi saat ini masih perlu diperluas secara berkala.</li>
+                    <li>Memerlukan pendampingan orang tua bagi anak usia sangat dini (kelas 1-2 SD).</li>
+                </ul>
+            </div>
+
+            <div class="pmi-card pmi-int">
+                <h3>💡 Interesting (Menarik)</h3>
+                <ul style="padding-left: 1.2rem; margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">
+                    <li>Bagaimana elemen kompetisi leaderboard lokal bisa memicu kerja kelompok secara organik di luar sekolah.</li>
+                    <li>Potensi data analitik perkembangan belajar anak diintegrasikan langsung sebagai suplemen laporan rapor guru di sekolah.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- INDICATORS -->
+        <div class="card" style="margin-top: 4rem; background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(6, 182, 212, 0.03)); border-top: 5px solid var(--primary-blue);">
+            <h3 style="margin-bottom: 1rem;">🎯 Indikator Keberhasilan Proyek</h3>
+            <p style="margin-bottom: 2rem;">Untuk mengukur efektivitas SmartFun Learning Corner secara berkelanjutan, kami menetapkan 3 parameter metrik utama:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <div class="card" style="padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
+                    <h4>Tingkat Keterlibatan</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-muted);">Siswa rata-rata menghabiskan waktu minimal 15 menit per hari di platform secara sukarela.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                    <h4>Akurasi Kognitif</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-muted);">Peningkatan akurasi jawaban siswa terhadap soal matematika dasar minimal 25% dalam satu bulan pemakaian.</p>
+                </div>
+                <div class="card" style="padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤝</div>
+                    <h4>Adopsi Kemitraan</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-muted);">Mendapatkan adopsi kemitraan setidaknya di 3 Sekolah Dasar lokal sebagai program pendukung kurikulum.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>🎓 SmartFun Learning Corner</h2>
+                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fakta.html">Fakta & Data</a></li>
+                    <li><a href="target.html">Target SDGs</a></li>
+                    <li><a href="swot.html">Analisis SWOT</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Proses & Solusi</h3>
+                <ul>
+                    <li><a href="proses.html">Design Thinking</a></li>
+                    <li><a href="solusi.html">Solusi Akhir</a></li>
+                    <li><a href="pitch.html">Video Pitch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dokumen & Lainnya</h3>
+                <ul>
+                    <li><a href="refleksi.html">Refleksi Proyek</a></li>
+                    <li><a href="referensi.html">Referensi APA 7</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
