@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referensi Pustaka - SmartFun Learning Corner</title>
+    <title>Referensi Pustaka - Literacy & Future Skills Project</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Daftar pustaka berformat APA 7th Edition yang mendukung data penelitian dan rancangan proyek STEM kami.">
 </head>
@@ -12,8 +14,8 @@
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo-container">
-            <span class="logo-icon">🎓</span>
-            <span class="logo-text">SmartFun</span>
+            <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="logo-text">Literacy & Future Skills</span>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
             <span></span>
@@ -32,13 +34,15 @@
             <a href="referensi.html" class="nav-link active">Referensi</a>
         </nav>
         <div class="nav-actions">
-            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </header>
 
     <!-- HERO SMALL -->
     <section class="hero-small">
-        <h1>📚 Referensi Akademis</h1>
+        <h1><i class="fas fa-book"></i> Referensi Akademis</h1>
         <p>Daftar Pustaka Berformat APA Edisi ke-7 yang Menjadi Acuan Landasan Teori Kami</p>
     </section>
 
@@ -51,10 +55,10 @@
 
         <!-- FILTER CATEGORIES -->
         <div style="display: flex; gap: 0.8rem; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap;">
-            <button class="btn btn-secondary filter-btn" onclick="filterRef('all')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700; background-color: var(--primary-blue); color: white; border-color: var(--primary-blue);">Semua Referensi</button>
-            <button class="btn btn-secondary filter-btn" onclick="filterRef('journal')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;">Jurnal & Artikel</button>
-            <button class="btn btn-secondary filter-btn" onclick="filterRef('book')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;">Buku Ajar</button>
-            <button class="btn btn-secondary filter-btn" onclick="filterRef('report')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;">Laporan Resmi & Lembaga</button>
+            <button class="btn btn-secondary filter-btn" onclick="filterRef('all')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700; background-color: var(--primary-blue); color: white; border-color: var(--primary-blue);"><i class="fas fa-list"></i> Semua</button>
+            <button class="btn btn-secondary filter-btn" onclick="filterRef('journal')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;"><i class="fas fa-file-lines"></i> Jurnal & Artikel</button>
+            <button class="btn btn-secondary filter-btn" onclick="filterRef('book')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;"><i class="fas fa-book-open"></i> Buku Ajar</button>
+            <button class="btn btn-secondary filter-btn" onclick="filterRef('report')" style="padding: 0.5rem 1.2rem; font-size: 0.9rem; font-weight: 700;"><i class="fas fa-building-columns"></i> Laporan Resmi</button>
         </div>
 
         <!-- REFERENCES LIST -->
@@ -63,55 +67,55 @@
             <!-- REF 1: OECD PISA -->
             <div class="ref-card" data-cat="report">
                 <div class="ref-content">
-                    <span class="ref-tag">Laporan Resmi & Lembaga</span>
+                    <span class="ref-tag"><i class="fas fa-building-columns"></i> Laporan Resmi & Lembaga</span>
                     <p id="cite-1">OECD. (2023). <em>PISA 2022 Results (Volume I): The State of Learning and Equity in Education</em>. OECD Publishing. https://doi.org/10.1787/53f2377c-en</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-1', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-1', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
             <!-- REF 2: KEMENDIKBUD -->
             <div class="ref-card" data-cat="report">
                 <div class="ref-content">
-                    <span class="ref-tag">Laporan Resmi & Lembaga</span>
+                    <span class="ref-tag"><i class="fas fa-building-columns"></i> Laporan Resmi & Lembaga</span>
                     <p id="cite-2">Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi. (2023). <em>Laporan Rapor Pendidikan Nasional Tahun 2023</em>. Kemendikbudristek RI. https://raporpendidikan.kemdikbud.go.id/</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-2', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-2', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
             <!-- REF 3: UNITED NATIONS -->
             <div class="ref-card" data-cat="report">
                 <div class="ref-content">
-                    <span class="ref-tag">Laporan Resmi & Lembaga</span>
+                    <span class="ref-tag"><i class="fas fa-building-columns"></i> Laporan Resmi & Lembaga</span>
                     <p id="cite-3">United Nations. (2015). <em>Transforming our world: the 2030 Agenda for Sustainable Development</em>. UN Publishing. https://sdgs.un.org/goals</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-3', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-3', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
             <!-- REF 4: BPS -->
             <div class="ref-card" data-cat="report">
                 <div class="ref-content">
-                    <span class="ref-tag">Laporan Resmi & Lembaga</span>
+                    <span class="ref-tag"><i class="fas fa-building-columns"></i> Laporan Resmi & Lembaga</span>
                     <p id="cite-4">Badan Pusat Statistik. (2023). <em>Analisis Indikator Tujuan Pembangunan Berkelanjutan (SDGs) Indonesia 2023</em>. BPS RI. https://www.bps.go.id/</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-4', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-4', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
             <!-- REF 5: GAMIFICATION JOURNAL -->
             <div class="ref-card" data-cat="journal">
                 <div class="ref-content">
-                    <span class="ref-tag">Jurnal & Artikel</span>
+                    <span class="ref-tag"><i class="fas fa-file-lines"></i> Jurnal & Artikel</span>
                     <p id="cite-5">Deterding, S., Dixon, D., Khaled, R., & Nacke, L. (2011). From game design elements to gamefulness: defining "gamification". In <em>Proceedings of the 15th International Academic MindTrek Conference</em> (pp. 9-15). ACM. https://doi.org/10.1145/2181037.2181040</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-5', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-5', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
             <!-- REF 6: EDUCATION PSYCHOLOGY BOOK -->
             <div class="ref-card" data-cat="book">
                 <div class="ref-content">
-                    <span class="ref-tag">Buku Ajar</span>
+                    <span class="ref-tag"><i class="fas fa-book-open"></i> Buku Ajar</span>
                     <p id="cite-6">Santrock, J. W. (2018). <em>Educational Psychology</em> (6th ed.). McGraw-Hill Education.</p>
                 </div>
-                <button class="ref-copy-btn" onclick="copyCitation('cite-6', this)">Salin Kutipan 📋</button>
+                <button class="ref-copy-btn" onclick="copyCitation('cite-6', this)">Salin Kutipan <i class="far fa-copy"></i></button>
             </div>
 
         </div>
@@ -122,8 +126,8 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
-                <h2>🎓 SmartFun Learning Corner</h2>
-                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+                <h2>🎓 Literacy & Future Skills Project</h2>
+                <p>Website presentasi proyek STEM universitas yang berfokus pada peningkatan literasi, numerasi, dan kesiapan kerja melalui pendekatan Design Thinking.</p>
             </div>
             <div class="footer-col">
                 <h3>Navigasi Cepat</h3>
@@ -147,17 +151,17 @@
                 <ul>
                     <li><a href="refleksi.html">Refleksi Proyek</a></li>
                     <li><a href="referensi.html">Referensi APA 7</a></li>
-                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Download PDF 📄</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+            <p>&copy; 2026 Literacy & Future Skills Project | Capstone STEM Universitas. Didesain secara profesional.</p>
         </div>
     </footer>
 
     <!-- BACK TO TOP BUTTON -->
-    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
 
     <script src="main.js"></script>
     <script>
@@ -166,7 +170,7 @@
             const citeText = document.getElementById(citeId).innerText;
             navigator.clipboard.writeText(citeText).then(() => {
                 const originalText = btn.innerHTML;
-                btn.innerHTML = "Tersalin! ✓";
+                btn.innerHTML = 'Tersalin! <i class="fas fa-check"></i>';
                 btn.style.backgroundColor = "#22c55e";
                 btn.style.color = "white";
                 btn.style.borderColor = "#22c55e";
@@ -185,7 +189,6 @@
 
         // Kategori Filter Logic
         function filterRef(cat) {
-            // Update filter buttons appearance
             const buttons = document.querySelectorAll('.filter-btn');
             const targetBtn = event.currentTarget;
             
@@ -201,7 +204,6 @@
                 targetBtn.style.borderColor = "var(--primary-blue)";
             }
 
-            // Filter items
             const cards = document.querySelectorAll('.ref-card');
             cards.forEach(card => {
                 if (cat === 'all') {

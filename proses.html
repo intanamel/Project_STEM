@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Thinking Process - SmartFun Learning Corner</title>
+    <title>Design Thinking Process - Literacy & Future Skills Project</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Dokumentasi lengkap proses Design Thinking mulai dari Empathy, Define, Ideate, Prototype, hingga Testing.">
+    <meta name="description" content="Dokumentasi proses pengembangan dengan metode Design Thinking yang terbagi menjadi bagian horizontal.">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo-container">
-            <span class="logo-icon">🎓</span>
-            <span class="logo-text">SmartFun</span>
+            <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="logo-text">Literacy & Future Skills</span>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
             <span></span>
@@ -32,386 +34,554 @@
             <a href="referensi.html" class="nav-link">Referensi</a>
         </nav>
         <div class="nav-actions">
-            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </header>
 
     <!-- HERO SMALL -->
     <section class="hero-small">
-        <h1>🧠 Design Thinking Process</h1>
-        <p>Perjalanan Kami dalam Berempati, Menemukan Masalah, dan Merancang Solusi</p>
+        <h1><i class="fas fa-diagram-project"></i> Design Thinking Process</h1>
+        <p>Pendekatan Sistematis untuk Memetakan Masalah dan Merancang Prototipe Solusi</p>
     </section>
 
-    <!-- PROCESS TIMELINE -->
+    <!-- SECTION 1: TIMELINE OVERVIEW -->
     <section class="container reveal">
-        <div class="timeline">
-            
-            <!-- STAGE 1: EMPATHY -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="hero-badge" style="background-color: #dbeafe; color: #1e40af;">Tahap 1</span>
-                    <h2 style="margin-top: 0.5rem;">🔍 Empathy & Observasi</h2>
-                    <p style="margin-bottom: 1.5rem;">Kami mengamati bagaimana anak-anak menghabiskan waktu luang mereka dengan gawai dan mengidentifikasi keengganan mereka belajar literasi dan numerasi konvensional. Kami menyebarkan survei terstruktur untuk memvalidasi kendala belajar ini.</p>
-                    
-                    <h3>Hasil Survei Pengguna (Survey Evidence Q1 - Q16)</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Berikut data persentase jawaban responden dari 16 indikator pertanyaan survei:</p>
-                    
-                    <div class="survey-evidence-grid">
-                        <div class="survey-card">
-                            <div class="survey-q">Q1: Durasi gawai >3 jam/hari</div>
-                            <div class="survey-stats"><span>Ya</span><span>70%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 70%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q2: Minat baca buku fisik rendah</div>
-                            <div class="survey-stats"><span>Ya</span><span>80%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 80%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q3: Sulit belajar matematika</div>
-                            <div class="survey-stats"><span>Ya</span><span>65%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 65%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q4: Tertarik belajar lewat game</div>
-                            <div class="survey-stats"><span>Ya</span><span>92%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 92%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q5: Akses internet memadai</div>
-                            <div class="survey-stats"><span>Ya</span><span>85%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 85%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q6: Pernah pakai aplikasi belajar</div>
-                            <div class="survey-stats"><span>Ya</span><span>40%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 40%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q7: Ikut bimbel luar sekolah</div>
-                            <div class="survey-stats"><span>Ya</span><span>30%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 30%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q8: Sulit paham cerita panjang</div>
-                            <div class="survey-stats"><span>Ya</span><span>58%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 58%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q9: Kendala hitungan perkalian dasar</div>
-                            <div class="survey-stats"><span>Ya</span><span>52%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 52%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q10: Ortu dukung belajar digital</div>
-                            <div class="survey-stats"><span>Ya</span><span>75%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 75%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q11: Kurang interaktif di kelas</div>
-                            <div class="survey-stats"><span>Ya</span><span>45%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 45%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q12: Suka berkompetisi sehat</div>
-                            <div class="survey-stats"><span>Ya</span><span>82%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 82%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q13: Suka game petualangan</div>
-                            <div class="survey-stats"><span>Ya</span><span>88%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 88%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q14: Termotivasi oleh sistem hadiah</div>
-                            <div class="survey-stats"><span>Ya</span><span>90%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 90%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q15: Sulit fokus baca buku teks</div>
-                            <div class="survey-stats"><span>Ya</span><span>68%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 68%"></div></div>
-                        </div>
-                        <div class="survey-card">
-                            <div class="survey-q">Q16: Berharap platform belajar gratis</div>
-                            <div class="survey-stats"><span>Ya</span><span>95%</span></div>
-                            <div class="survey-bar"><div class="survey-fill" style="width: 95%"></div></div>
-                        </div>
+        <div class="section-header">
+            <h2 class="section-title">Design Thinking Overview</h2>
+            <p class="section-subtitle">Garis besar proses iterasi capstone proyek kami. Silakan lihat tahapan detail pada bagian di bawah ini.</p>
+        </div>
+
+        <div class="horizontal-timeline">
+            <div class="timeline-step active">
+                <div class="timeline-circle">1</div>
+                <div class="timeline-title">Empathy</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="timeline-circle">2</div>
+                <div class="timeline-title">Research</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="timeline-circle">3</div>
+                <div class="timeline-title">Ideation</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="timeline-circle">4</div>
+                <div class="timeline-title">Prototype</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="timeline-circle">5</div>
+                <div class="timeline-title">Testing</div>
+            </div>
+            <div class="timeline-step active">
+                <div class="timeline-circle">6</div>
+                <div class="timeline-title">Reflection</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: EMPATHY & RESEARCH -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Empathy & Research</h2>
+            <p class="section-subtitle">Memahami kondisi psikologis pengguna sasaran dan mengumpulkan data faktual.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3 style="color: var(--primary-blue);"><i class="fas fa-users"></i> Empathy</h3>
+                <p style="margin-top: 1rem; line-height: 1.7;">
+                    Kami melakukan wawancara langsung dan observasi terhadap siswa sekolah dasar serta orang tua mereka. Kami menemukan bahwa anak-anak sering kali mengalami kejenuhan terhadap metode hafalan teks yang statis. Penggunaan gawai didominasi untuk game konsumsi murni, sementara motivasi belajar mandiri sangat rendah. Guru-guru juga mengeluhkan sulitnya mengajar konsep pembagian dasar secara abstrak.
+                </p>
+            </div>
+            <div class="card">
+                <h3 style="color: var(--cyan);"><i class="fas fa-chart-line"></i> Research Findings</h3>
+                <p style="margin-top: 1rem; line-height: 1.7;">
+                    Data sekunder menunjukkan bahwa ketiadaan materi visual dinamis berkontribusi pada penurunan pemahaman logika (mismatch skill). Survei mandiri kami terhadap kelompok responden mengonfirmasi adanya kesenjangan fasilitas internet. Responden menyatakan bahwa format belajar tergamifikasi (kuis mini interaktif) adalah solusi yang paling diinginkan untuk mendongkrak minat kognitif mereka.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SURVEY EVIDENCE -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Survey Evidence</h2>
+            <p class="section-subtitle">Hasil pengumpulan data dari 16 pertanyaan survei (Q1 - Q16). Klik pada kartu survei untuk melihat diagram analisis detail.</p>
+        </div>
+
+        <div class="survey-evidence-grid">
+            <!-- Q1 -->
+            <div class="survey-card" data-q="q1">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 1</span><i class="fas fa-mobile-screen-button survey-card-icon"></i></div>
+                <div class="survey-q-text">Durasi bermain gawai per hari melebihi 3 jam secara konstan.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>70%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 70%"></div></div>
+                </div>
+            </div>
+            <!-- Q2 -->
+            <div class="survey-card" data-q="q2">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 2</span><i class="fas fa-book survey-card-icon"></i></div>
+                <div class="survey-q-text">Minat membaca buku teks pelajaran cetak secara mandiri rendah.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>80%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 80%"></div></div>
+                </div>
+            </div>
+            <!-- Q3 -->
+            <div class="survey-card" data-q="q3">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 3</span><i class="fas fa-plus-minus survey-card-icon"></i></div>
+                <div class="survey-q-text">Menilai matematika dan berhitung dasar sebagai pelajaran sulit.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>65%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 65%"></div></div>
+                </div>
+            </div>
+            <!-- Q4 -->
+            <div class="survey-card" data-q="q4">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 4</span><i class="fas fa-gamepad survey-card-icon"></i></div>
+                <div class="survey-q-text">Sangat tertarik belajar jika disajikan dalam format video game.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>92%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 92%"></div></div>
+                </div>
+            </div>
+            <!-- Q5 -->
+            <div class="survey-card" data-q="q5">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 5</span><i class="fas fa-wifi survey-card-icon"></i></div>
+                <div class="survey-q-text">Ketersediaan akses koneksi internet di rumah memadai.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>85%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 85%"></div></div>
+                </div>
+            </div>
+            <!-- Q6 -->
+            <div class="survey-card" data-q="q6">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 6</span><i class="fas fa-laptop-code survey-card-icon"></i></div>
+                <div class="survey-q-text">Pernah menggunakan aplikasi bimbingan belajar digital online.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>40%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 40%"></div></div>
+                </div>
+            </div>
+            <!-- Q7 -->
+            <div class="survey-card" data-q="q7">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 7</span><i class="fas fa-school survey-card-icon"></i></div>
+                <div class="survey-q-text">Mengikuti bimbingan belajar tambahan tatap muka luar sekolah.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>30%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 30%"></div></div>
+                </div>
+            </div>
+            <!-- Q8 -->
+            <div class="survey-card" data-q="q8">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 8</span><i class="fas fa-file-waveform survey-card-icon"></i></div>
+                <div class="survey-q-text">Mengalami kesulitan memahami pesan dalam paragraf panjang.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>58%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 58%"></div></div>
+                </div>
+            </div>
+            <!-- Q9 -->
+            <div class="survey-card" data-q="q9">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 9</span><i class="fas fa-calculator survey-card-icon"></i></div>
+                <div class="survey-q-text">Mengalami hambatan pada operasi hitung perkalian pembagian.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>52%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 52%"></div></div>
+                </div>
+            </div>
+            <!-- Q10 -->
+            <div class="survey-card" data-q="q10">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 10</span><i class="fas fa-people-roof survey-card-icon"></i></div>
+                <div class="survey-q-text">Orang tua mendukung anak belajar memakai gawai/smartphone.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>75%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 75%"></div></div>
+                </div>
+            </div>
+            <!-- Q11 -->
+            <div class="survey-card" data-q="q11">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 11</span><i class="fas fa-chalkboard-user survey-card-icon"></i></div>
+                <div class="survey-q-text">Menilai metode belajar di sekolah saat ini kurang interaktif.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>45%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 45%"></div></div>
+                </div>
+            </div>
+            <!-- Q12 -->
+            <div class="survey-card" data-q="q12">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 12</span><i class="fas fa-trophy survey-card-icon"></i></div>
+                <div class="survey-q-text">Suka berkompetisi skor nilai secara sehat dengan teman kelas.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>82%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 82%"></div></div>
+                </div>
+            </div>
+            <!-- Q13 -->
+            <div class="survey-card" data-q="q13">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 13</span><i class="fas fa-compass survey-card-icon"></i></div>
+                <div class="survey-q-text">Menyukai model permainan petualangan penjelajahan misi.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>88%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 88%"></div></div>
+                </div>
+            </div>
+            <!-- Q14 -->
+            <div class="survey-card" data-q="q14">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 14</span><i class="fas fa-medal survey-card-icon"></i></div>
+                <div class="survey-q-text">Adanya hadiah poin/badge membuat motivasi belajar meningkat.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>90%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 90%"></div></div>
+                </div>
+            </div>
+            <!-- Q15 -->
+            <div class="survey-card" data-q="q15">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 15</span><i class="fas fa-eye-slash survey-card-icon"></i></div>
+                <div class="survey-q-text">Sulit memusatkan konsentrasi membaca buku pelajaran non-gambar.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>68%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 68%"></div></div>
+                </div>
+            </div>
+            <!-- Q16 -->
+            <div class="survey-card" data-q="q16">
+                <div class="survey-card-header"><span class="survey-q-num">Pertanyaan 16</span><i class="fas fa-circle-check survey-card-icon"></i></div>
+                <div class="survey-q-text">Menyambut baik platform pembelajaran seru yang gratis diakses.</div>
+                <div>
+                    <div class="survey-stats-bar"><span>Ya</span><span>95%</span></div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" style="width: 95%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: COMPETITOR ANALYSIS -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Competitor Analysis</h2>
+            <p class="section-subtitle">Menganalisis keterbatasan solusi yang ada untuk merumuskan keunggulan tersendiri platform kami.</p>
+        </div>
+
+        <div class="competitor-list">
+            <!-- COMP 1 -->
+            <div class="competitor-card-horizontal">
+                <div class="comp-brand-section">
+                    <span class="comp-name">Ruangguru</span>
+                    <span class="comp-badge-cost" style="background-color: var(--swot-t-bg); color: var(--swot-t-text);">Premium / Berbayar</span>
+                </div>
+                <div class="comp-details-section">
+                    <div class="comp-detail-box">
+                        <h4>Fitur Utama</h4>
+                        <p>Video pembelajaran animasi materi kurikulum nasional lengkap.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Target Pengguna</h4>
+                        <p>Siswa SD, SMP, SMA pemegang akses langganan.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Kekurangan Utama</h4>
+                        <p>Biaya langganan tinggi dan minim elemen gamifikasi aktif mandiri.</p>
                     </div>
                 </div>
             </div>
             
-            <!-- STAGE 2: DEFINE -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="hero-badge" style="background-color: #fef3c7; color: #92400e;">Tahap 2</span>
-                    <h2 style="margin-top: 0.5rem;">📊 Research Findings & Define</h2>
-                    <p style="margin-bottom: 1.5rem;">Dari hasil empati, kami merumuskan masalah utama: <em>Siswa membutuhkan sarana pembelajaran literasi dan numerasi yang seru tanpa rasa tertekan, sementara orang tua menginginkan waktu screen-time anak bermakna.</em></p>
-                    
-                    <h3>Empathy Matrix: Analisis Perbandingan Solusi</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Kami memetakan perbandingan platform yang sudah ada untuk mengidentifikasi celah peluang (gap):</p>
-                    
-                    <div class="comparison-matrix">
-                        <div class="matrix-cell matrix-header">Fitur Evaluasi</div>
-                        <div class="matrix-cell matrix-header">Ruangguru</div>
-                        <div class="matrix-cell matrix-header">Program Sekolah Digital</div>
-                        <div class="matrix-cell matrix-header">Khan Academy</div>
-                        
-                        <div class="matrix-cell matrix-feature">Fokus Konten</div>
-                        <div class="matrix-cell">Materi video berbasis kurikulum formal.</div>
-                        <div class="matrix-cell">Penyediaan hardware (Chromebook) & infra.</div>
-                        <div class="matrix-cell">Latihan soal terstruktur & video tutorial.</div>
-                        
-                        <div class="matrix-cell matrix-feature">Aksesibilitas & Biaya</div>
-                        <div class="matrix-cell">Berbayar premium/cukup mahal.</div>
-                        <div class="matrix-cell">Didanai APBN (terbatas sekolah tertentu).</div>
-                        <div class="matrix-cell">Gratis secara global.</div>
-                        
-                        <div class="matrix-cell matrix-feature">Fokus Gamifikasi</div>
-                        <div class="matrix-cell">Sangat terbatas (hanya poin standar).</div>
-                        <div class="matrix-cell">Hampir tidak ada (fokus administrasi).</div>
-                        <div class="matrix-cell">Cukup baik (badge & poin keaktifan).</div>
-                        
-                        <div class="matrix-cell matrix-feature">Celah bagi SmartFun</div>
-                        <div class="matrix-cell" colspan="3" style="background-color: rgba(6, 182, 212, 0.08); font-weight: bold; color: var(--primary-blue); text-align: center;">
-                            SmartFun hadir mengisi celah: Menyediakan gamifikasi penuh (belajar 100% interaktif lewat game mini), gratis & ringan diakses via mobile web, khusus literasi-numerasi dasar!
-                        </div>
+            <!-- COMP 2 -->
+            <div class="competitor-card-horizontal">
+                <div class="comp-brand-section">
+                    <span class="comp-name">Sekolah Digital</span>
+                    <span class="comp-badge-cost" style="background-color: var(--swot-o-bg); color: var(--swot-o-text);">Bantuan Pemerintah</span>
+                </div>
+                <div class="comp-details-section">
+                    <div class="comp-detail-box">
+                        <h4>Fitur Utama</h4>
+                        <p>Penyediaan Chromebook dan akun belajar untuk akses portal.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Target Pengguna</h4>
+                        <p>Sekolah negeri tertentu penerima bantuan APBN.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Kekurangan Utama</h4>
+                        <p>Distribusi infra timpang, belum menyentuh pelosok merata.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMP 3 -->
+            <div class="competitor-card-horizontal">
+                <div class="comp-brand-section">
+                    <span class="comp-name">Khan Academy</span>
+                    <span class="comp-badge-cost" style="background-color: var(--swot-s-bg); color: var(--swot-s-text);">100% Gratis</span>
+                </div>
+                <div class="comp-details-section">
+                    <div class="comp-detail-box">
+                        <h4>Fitur Utama</h4>
+                        <p>Video tutorial ringkas dan bank soal latihan adaptif.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Target Pengguna</h4>
+                        <p>Pengguna mandiri global segala jenjang umur.</p>
+                    </div>
+                    <div class="comp-detail-box">
+                        <h4>Kekurangan Utama</h4>
+                        <p>Kontekstualisasi lokal/Kurikulum Merdeka Indonesia masih minim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: IDEATION -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Ideation Solusi</h2>
+            <p class="section-subtitle">Daftar ide solusi kreatif yang dikembangkan berdasarkan kelemahan kompetitor di atas.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <div class="card-icon" style="color: var(--primary-blue);"><i class="fas fa-book-open"></i></div>
+                <h3>Adventure Storybook</h3>
+                <p>Modul bacaan interaktif di mana anak-anak dapat memilih jalur pilihan ceritanya sendiri sembari memecahkan teka-teki kosakata dasar.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--cyan);"><i class="fas fa-cubes"></i></div>
+                <h3>Math Puzzle Challenge</h3>
+                <p>Permainan perhitungan matematika dasar berbentuk puzzle balok kayu virtual yang melatih kemampuan estimasi dan berhitung cepat.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--primary-blue);"><i class="fas fa-medal"></i></div>
+                <h3>Gamification Engine</h3>
+                <p>Sistem poin, lencana (badge) keberhasilan, papan peringkat lokal, dan misi harian guna memotivasi siswa belajar berulang secara mandiri.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: MIND MAP & STARBURST -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Mind Map & Starburst</h2>
+            <p class="section-subtitle">Representasi visual pemetaan solusi dan kerangka tanya jawab kritis (Starburst Analysis).</p>
+        </div>
+
+        <div class="grid-2">
+            <!-- MIND MAP CSS -->
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-blue);"><i class="fas fa-diagram-project"></i> Mind Map Cabang Solusi</h3>
+                <div class="mindmap-tree">
+                    <div class="mindmap-node-line"><span class="node-box root-node">SmartFun Learning Corner</span></div>
+                    <div style="margin-left: 2rem; border-left: 2px solid var(--border-color); padding-left: 1rem; display: flex; flex-direction: column; gap: 0.8rem; margin-top: 0.8rem;">
+                        <div class="mindmap-node-line"><i class="fas fa-chevron-right" style="color: var(--cyan);"></i> <span class="node-box">Game Literasi</span> <span class="node-box">Petualangan Cerita</span></div>
+                        <div class="mindmap-node-line"><i class="fas fa-chevron-right" style="color: var(--cyan);"></i> <span class="node-box">Game Numerasi</span> <span class="node-box">Math Puzzle Block</span></div>
+                        <div class="mindmap-node-line"><i class="fas fa-chevron-right" style="color: var(--cyan);"></i> <span class="node-box">Reward System</span> <span class="node-box">Lencana & Papan Peringkat</span></div>
                     </div>
                 </div>
             </div>
             
-            <!-- STAGE 3: IDEATE -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="hero-badge" style="background-color: #dcfce7; color: #166534;">Tahap 3</span>
-                    <h2 style="margin-top: 0.5rem;">💡 Ideation & Concepting</h2>
-                    <p style="margin-bottom: 1.5rem;">Kami melakukan brainstorming untuk memunculkan berbagai ide solusi kreatif guna menarik minat belajar siswa kelas dasar.</p>
-                    
-                    <h3>Daftar Ide Solusi</h3>
-                    <ul style="padding-left: 1.2rem; margin-bottom: 2rem;">
-                        <li><strong>Game Petualangan Kata:</strong> Membantu siswa menyusun huruf dan memahami teks pendek.</li>
-                        <li><strong>Puzzle Matematika Adaptif:</strong> Menyelesaikan teka-teki logika angka dengan tingkat kesulitan bertahap.</li>
-                        <li><strong>Sistem Hadiah / Badge:</strong> Memberikan apresiasi visual setiap kali target harian tercapai.</li>
-                        <li><strong>Leaderboard Sekolah:</strong> Menumbuhkan kompetisi positif antarsiswa di kelas.</li>
+            <!-- STARBURST -->
+            <div>
+                <h3 style="margin-bottom: 1.5rem; color: var(--cyan);"><i class="fas fa-star"></i> Starburst Analysis</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">WHO</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Siswa SD/SMP kelas 3-7 (usia 8-13 tahun) selaku pengguna aktif utama.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">WHAT</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Platform web edukasi responsif yang berfokus pada game kognitif literasi dan numerasi dasar.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">WHEN</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Digunakan di luar jam sekolah (belajar mandiri) sekitar 15-30 menit per hari.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">WHERE</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Diakses via browser gawai di rumah masing-masing siswa.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">WHY</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Mendongkrak skor literasi PISA nasional dan melatih problem-solving dasar kesiapan kerja.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary-blue);">HOW</span>
+                        <p style="font-size: 0.85rem; margin-top: 0.2rem;">Mengemas bank kuis kurikulum merdeka ke dalam level game berhadiah poin lencana.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PROTOTYPE -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Prototype Solusi</h2>
+            <p class="section-subtitle">Melihat hasil nyata rancangan purwarupa platform pembelajaran gamifikasi kami.</p>
+        </div>
+
+        <div class="card" style="display: flex; gap: 2rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <div style="flex: 2; min-width: 280px;">
+                <h3>SmartFun Learning Corner</h3>
+                <p style="margin-top: 1rem; margin-bottom: 1.5rem; line-height: 1.7;">
+                    Purwarupa kami dirancang menggunakan standar desain modern (UI/UX) dengan menu responsif, elemen warna harmonis, dan pemrosesan kuis dinamis. Platform ini terbukti menaikkan antusiasme belajar siswa pada kelompok uji coba.
+                </p>
+                <a href="solusi.html" class="btn btn-primary">View Prototype <i class="fas fa-gamepad"></i></a>
+            </div>
+            <div style="flex: 1; min-width: 250px; background-color: var(--bg-light); border: 2px dashed var(--border-color); padding: 3rem; border-radius: var(--radius-md); text-align: center;">
+                <i class="fas fa-laptop-code" style="font-size: 4rem; color: var(--primary-blue); margin-bottom: 1rem;"></i>
+                <h4 style="color: var(--text-main);">Demo Interaktif Aktif</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">Klik tombol "View Prototype" untuk memainkan simulasi secara langsung.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: LEAN CANVAS -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Lean Canvas Proyek</h2>
+            <p class="section-subtitle">Kerangka bisnis dan nilai keberlanjutan solusi platform SmartFun Learning Corner.</p>
+        </div>
+
+        <div class="lean-canvas-dashboard">
+            <!-- Problem -->
+            <div class="canvas-cell row-span-2">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-triangle-exclamation"></i></span><span class="canvas-cell-title">Problem</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Minat literasi dasar siswa kritis (PISA rendah).</li>
+                        <li>Metode ajar konvensional statis membosankan.</li>
+                        <li>Learning loss pasca pandemi Covid-19.</li>
                     </ul>
+                </div>
+            </div>
+            <!-- Solution -->
+            <div class="canvas-cell">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-lightbulb"></i></span><span class="canvas-cell-title">Solution</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Game susun kata literasi.</li>
+                        <li>Math Puzzle adaptif.</li>
+                        <li>Reward lencana virtual.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- UVP -->
+            <div class="canvas-cell row-span-2">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-gem"></i></span><span class="canvas-cell-title">UVP</span></div>
+                <div class="canvas-cell-content">
+                    <strong>"Belajar Seasyik Bermain Game"</strong>
+                    <p style="margin-top: 0.5rem; font-size: 0.8rem; line-height: 1.5;">Platform edukasi kognitif adaptif gratis, bebas iklan, ramah anak, dan selaras dengan Kurikulum Merdeka.</p>
+                </div>
+            </div>
+            <!-- Channels -->
+            <div class="canvas-cell">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-bullhorn"></i></span><span class="canvas-cell-title">Channels</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Sosialisasi KKG Guru.</li>
+                        <li>Komunitas ortu digital.</li>
+                        <li>Media sosial edukatif.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Customer Segment -->
+            <div class="canvas-cell row-span-2">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-users-viewfinder"></i></span><span class="canvas-cell-title">Segments</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Siswa usia 8-13 tahun (SD kelas 3 - SMP kelas 7).</li>
+                        <li>Orang tua murid.</li>
+                        <li>Guru kelas dasar.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Key Metrics -->
+            <div class="canvas-cell">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-chart-line"></i></span><span class="canvas-cell-title">Key Metrics</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Daily Active Users (DAU).</li>
+                        <li>Average Session Duration.</li>
+                        <li>Retention Rate kuis.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Unfair Advantage -->
+            <div class="canvas-cell">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-lock"></i></span><span class="canvas-cell-title">Advantage</span></div>
+                <div class="canvas-cell-content">
+                    <ul>
+                        <li>Algoritma kesulitan kuis adaptif.</li>
+                        <li>Akses gratis 100% tanpa iklan mengganggu.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Cost Structure -->
+            <div class="canvas-cell col-span-2" style="min-height: 160px;">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-file-invoice-dollar"></i></span><span class="canvas-cell-title">Cost Structure</span></div>
+                <div class="canvas-cell-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>Hosting cloud server & nama domain berkala.</div>
+                    <div>Pembuatan konten kuis & aset digital ramah anak.</div>
+                </div>
+            </div>
+            <!-- Revenue Streams -->
+            <div class="canvas-cell col-span-3" style="min-height: 160px;">
+                <div class="canvas-cell-header"><span class="canvas-cell-icon"><i class="fas fa-wallet"></i></span><span class="canvas-cell-title">Revenue Streams</span></div>
+                <div class="canvas-cell-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>Model freemium (fitur dasar kuis gratis, lencana premium kosmetik berbayar opsional).</div>
+                    <div>Sponsor hibah kementerian pendidikan & program CSR korporasi.</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h3>Interactive CSS Mind Map</h3>
-                    <div class="mindmap-container">
-                        <div class="mindmap-node">
-                            <div class="mindmap-root">SmartFun Learning Corner</div>
-                            <div class="mindmap-branches">
-                                <div class="mindmap-branch-node">
-                                    <div class="mindmap-branch-title">📖 Game Literasi</div>
-                                    <div class="mindmap-leaves">
-                                        <div class="mindmap-leaf">Bacaan Interaktif</div>
-                                        <div class="mindmap-leaf">Petualangan Kosakata</div>
-                                    </div>
-                                </div>
-                                <div class="mindmap-branch-node">
-                                    <div class="mindmap-branch-title">🧮 Game Numerasi</div>
-                                    <div class="mindmap-leaves">
-                                        <div class="mindmap-leaf">Puzzle Matematika</div>
-                                        <div class="mindmap-leaf">Kuis Logika Cepat</div>
-                                    </div>
-                                </div>
-                                <div class="mindmap-branch-node">
-                                    <div class="mindmap-branch-title">🏆 Gamifikasi</div>
-                                    <div class="mindmap-leaves">
-                                        <div class="mindmap-leaf">Badge & Medali</div>
-                                        <div class="mindmap-leaf">Peringkat Mingguan</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- SECTION 9: ACCORDION REFLECTION -->
+    <section class="container reveal" style="border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <h2 class="section-title">Design Thinking Reflection</h2>
+            <p class="section-subtitle">Evaluasi tanya jawab kritis mengenai penerapan metode berpikir desain pada proyek capstone kami.</p>
+        </div>
 
-                    <h3 style="margin-top: 2rem;">Starburst Analysis: Evaluasi Ide</h3>
-                    <div class="starburst-container">
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">WHO</span></div>
-                            <p style="font-size: 0.9rem;">Siswa SD & SMP kelas 3-7 sebagai pengguna utama, didampingi orang tua dan dipantau oleh guru kelas.</p>
-                        </div>
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">WHAT</span></div>
-                            <p style="font-size: 0.9rem;">Platform web edukasi interaktif gratis berbasis mini game literasi, kuis logika numerasi, dan gamifikasi.</p>
-                        </div>
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">WHEN</span></div>
-                            <p style="font-size: 0.9rem;">Digunakan secara mandiri di luar jam sekolah sebagai suplemen belajar harian (15-30 menit sehari).</p>
-                        </div>
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">WHERE</span></div>
-                            <p style="font-size: 0.9rem;">Dapat diakses di mana saja melalui browser web perangkat smartphone, tablet, maupun laptop.</p>
-                        </div>
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">WHY</span></div>
-                            <p style="font-size: 0.9rem;">Mengatasi learning loss pasca pandemi, mendongkrak skor literasi PISA, dan melatih kesiapan logika kerja.</p>
-                        </div>
-                        <div class="star-card">
-                            <div class="star-header"><span class="star-badge">HOW</span></div>
-                            <p style="font-size: 0.9rem;">Menyajikan materi kurikulum dasar dalam bentuk game seru dengan imbalan poin, badge, dan pencapaian level.</p>
-                        </div>
+        <div class="accordion-container">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Apakah metode Design Thinking benar-benar membantu penemuan masalah dasar?</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Sangat membantu. Melalui pemetaan empati (Empathy Map), kami mengesampingkan asumsi subjektif pengembang dan benar-benar mendengarkan keresahan orisinil siswa yang bosan terhadap format modul ajar konvensional serta kekhawatiran guru tentang learning loss.
                     </div>
                 </div>
             </div>
-            
-            <!-- STAGE 4: PROTOTYPE & TEST -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="hero-badge" style="background-color: #fee2e2; color: #991b1b;">Tahap 4</span>
-                    <h2 style="margin-top: 0.5rem;">⚙️ Prototype & Testing</h2>
-                    <p style="margin-bottom: 1.5rem;">Kami merancang prototype high-fidelity berbasis web yang responsif untuk dicoba langsung oleh kelompok pengguna sasaran.</p>
-                    
-                    <div class="card" style="border-left: 5px solid var(--primary-blue); padding: 1.5rem; margin-bottom: 2rem;">
-                        <h4>🎯 Hasil Pengujian (User Testing)</h4>
-                        <p style="font-size: 0.95rem; margin-top: 0.5rem;">
-                            Uji coba dilakukan kepada 20 siswa SD setempat selama satu minggu:<br>
-                            • <strong>85% Responden</strong> setuju bahwa platform membuat belajar matematika dasar terasa jauh lebih seru.<br>
-                            • <strong>70% Siswa</strong> menunjukkan peningkatan akurasi menjawab kuis setelah 3 sesi permainan.<br>
-                            • Guru memberikan umpan balik agar ditambahkan petunjuk suara untuk membantu pembaca pemula.
-                        </p>
-                    </div>
-
-                    <h3>Startup Blueprint: Lean Canvas</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">Struktur model rencana pengembangan SmartFun Learning Corner secara berkelanjutan:</p>
-                    
-                    <div class="lean-canvas-dashboard">
-                        <!-- Problem -->
-                        <div class="canvas-cell row-span-2">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">⚠️</span>
-                                <span class="canvas-cell-title">Problem</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Skor PISA literasi-numerasi Indonesia di bawah rata-rata.</li>
-                                    <li>Metode belajar buku konvensional membosankan.</li>
-                                    <li>Learning loss dampak pandemi.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Solution -->
-                        <div class="canvas-cell">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">💡</span>
-                                <span class="canvas-cell-title">Solution</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Aplikasi mini game literasi.</li>
-                                    <li>Kuis numerasi tergamifikasi.</li>
-                                    <li>Sistem level & lencana reward.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- UVP -->
-                        <div class="canvas-cell row-span-2">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">💎</span>
-                                <span class="canvas-cell-title">UVP</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <strong>"Belajar Seasyik Bermain Game"</strong>
-                                <p style="margin-top: 0.5rem; font-size: 0.85rem;">Platform pembelajaran adaptif yang menyesuaikan kecepatan belajar anak, berbasis psikologi perkembangan, gratis, dan mendukung Kurikulum Merdeka.</p>
-                            </div>
-                        </div>
-                        <!-- Channels -->
-                        <div class="canvas-cell">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">📣</span>
-                                <span class="canvas-cell-title">Channels</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Media sosial pendidikan.</li>
-                                    <li>Kemitraan guru sekolah dasar.</li>
-                                    <li>Komunitas belajar digital.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Customer Segments -->
-                        <div class="canvas-cell row-span-2">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">👥</span>
-                                <span class="canvas-cell-title">Segments</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Siswa SD/SMP kelas 3-7 (usia 8-13 tahun).</li>
-                                    <li>Orang tua murid.</li>
-                                    <li>Guru sekolah dasar kelas bawah & atas.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Key Metrics -->
-                        <div class="canvas-cell">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">📈</span>
-                                <span class="canvas-cell-title">Key Metrics</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Pengguna aktif harian (DAU).</li>
-                                    <li>Durasi rata-rata bermain.</li>
-                                    <li>Tingkat retensi belajar mingguan.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Channels Sub/Unfair Advantage (repurposed for Channels/Cost in 8-cell layout) -->
-                        <div class="canvas-cell">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">🚀</span>
-                                <span class="canvas-cell-title">Advantage</span>
-                            </div>
-                            <div class="canvas-cell-content">
-                                <ul>
-                                    <li>Algoritma kesulitan adaptif.</li>
-                                    <li>Desain orisinal bebas iklan.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Cost Structure -->
-                        <div class="canvas-cell col-span-2" style="min-height: 180px;">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">💸</span>
-                                <span class="canvas-cell-title">Cost Structure</span>
-                            </div>
-                            <div class="canvas-cell-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                <div>Hosting server cloud & nama domain.</div>
-                                <div>Pembuatan aset ilustrasi edukatif & pengembangan kode.</div>
-                            </div>
-                        </div>
-                        <!-- Revenue Streams -->
-                        <div class="canvas-cell col-span-3" style="min-height: 180px;">
-                            <div class="canvas-cell-header">
-                                <span class="canvas-cell-icon">💰</span>
-                                <span class="canvas-cell-title">Revenue Streams</span>
-                            </div>
-                            <div class="canvas-cell-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                <div>Skema freemium (fitur dasar 100% gratis, kosmetik lencana/avatar premium berbayar).</div>
-                                <div>Kerjasama program CSR perusahaan teknologi & sponsor hibah pendidikan.</div>
-                            </div>
-                        </div>
+            <!-- Item 2 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Apa kendala terbesar saat merancang prototipe solusi ini?</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Kendala terbesar adalah memadukan tingkat kurikulum kompetensi formal dengan keseruan elemen game. Bila konten belajar terlalu padat, anak-anak jenuh; bila terlalu fokus bermain, esensi pembelajaran kognitif tidak tersampaikan. Menemukan titik seimbang (equilibrium) inilah yang menantang.
                     </div>
                 </div>
             </div>
-
-            <!-- STAGE 5: REFLECTION -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="hero-badge" style="background-color: rgba(var(--primary-blue-rgb), 0.1); color: var(--primary-blue);">Tahap 5</span>
-                    <h2 style="margin-top: 0.5rem;">🪞 Evaluasi & Refleksi Tim</h2>
-                    <p>
-                        Design Thinking memandu kami untuk tidak sekadar menciptakan aplikasi, melainkan memahami emosi pengguna. Kesulitan terbesar anak-anak dalam belajar bukanlah kurangnya kecerdasan, melainkan hilangnya ketertarikan karena metode yang stagnan. Melalui literasi dan numerasi yang menyenangkan, kami meletakkan dasar kognitif yang kuat untuk mempersiapkan mereka menyongsong masa depan dunia kerja yang menantang.
-                    </p>
+            <!-- Item 3 -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Bagaimana rencana pengembangan kelayakan platform ke depan?</span>
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-body">
+                    <div class="accordion-content">
+                        Kami berencana menggandeng Sekolah Dasar setempat untuk memperluas uji coba, mengaktifkan fitur asisten suara bagi siswa kelas dasar bawah yang belum lancar mengeja, dan merancang modul numerasi bertingkat berbasis petualangan interaktif.
+                    </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -419,8 +589,8 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
-                <h2>🎓 SmartFun Learning Corner</h2>
-                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+                <h2>🎓 Literacy & Future Skills Project</h2>
+                <p>Website presentasi proyek STEM universitas yang berfokus pada peningkatan literasi, numerasi, dan kesiapan kerja melalui pendekatan Design Thinking.</p>
             </div>
             <div class="footer-col">
                 <h3>Navigasi Cepat</h3>
@@ -444,17 +614,38 @@
                 <ul>
                     <li><a href="refleksi.html">Refleksi Proyek</a></li>
                     <li><a href="referensi.html">Referensi APA 7</a></li>
-                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Download PDF 📄</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+            <p>&copy; 2026 Literacy & Future Skills Project | Capstone STEM Universitas. Didesain secara profesional.</p>
         </div>
     </footer>
 
     <!-- BACK TO TOP BUTTON -->
-    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- GALLERY LIGHTBOX MODAL -->
+    <div class="modal" id="survey-modal">
+        <div class="modal-content-wrapper">
+            <button class="modal-close-btn" id="modal-close"><i class="fas fa-xmark"></i></button>
+            <div class="modal-body">
+                <div class="modal-q-title" id="modal-title"><i class="fas fa-chart-pie"></i> Analisis Detail Survei</div>
+                <p id="modal-question" style="font-weight: 600; color: var(--text-main); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+                <div class="modal-chart-placeholder">
+                    <i class="fas fa-chart-column" style="font-size: 2.5rem; color: var(--cyan); margin-bottom: 0.8rem;"></i>
+                    <span>Diagram Distribusi Frekuensi Data Responden</span>
+                </div>
+                <div style="margin-top: 1.2rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4rem;">
+                        <span id="modal-stats-label">Persentase Setuju: 0%</span>
+                    </div>
+                    <div class="survey-bar-fill"><div class="survey-fill-percent" id="modal-fill-percent" style="width: 0%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>

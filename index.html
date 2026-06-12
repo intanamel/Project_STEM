@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartFun Learning Corner - Solusi Edukasi STEM & SDGs</title>
+    <title>Literacy & Future Skills Project - Supporting SDG 4 & 8</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Platform edukasi interaktif untuk meningkatkan literasi, numerasi, dan kesiapan kerja generasi muda dalam kerangka SDG 4 dan SDG 8.">
+    <meta name="description" content="Proyek STEM mahasiswa universitas yang berfokus pada peningkatan literasi, numerasi, dan kesiapan kerja guna mendukung SDG 4 dan SDG 8 melalui Design Thinking.">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo-container">
-            <span class="logo-icon">🎓</span>
-            <span class="logo-text">SmartFun</span>
+            <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="logo-text">Literacy & Future Skills</span>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu Navigasi">
             <span></span>
@@ -32,7 +34,9 @@
             <a href="referensi.html" class="nav-link">Referensi</a>
         </nav>
         <div class="nav-actions">
-            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">🌙</button>
+            <button class="btn-toggle-theme" id="theme-toggle" aria-label="Toggle Mode Gelap/Terang">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </header>
 
@@ -40,38 +44,44 @@
     <section class="hero">
         <div class="hero-glow"></div>
         <div class="hero-content reveal active">
-            <span class="hero-badge">Proyek STEM Universitas</span>
-            <h1>SmartFun Learning Corner</h1>
-            <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan</p>
+            <span class="hero-badge">University STEM Capstone Project</span>
+            <h1>Literacy & Future Skills Project</h1>
+            <p>Supporting SDG 4 and SDG 8 Through Design Thinking</p>
+            <p style="font-size: 1.05rem; max-width: 650px; margin-top: -1.5rem; margin-bottom: 2.2rem; line-height: 1.6;">
+                Website ini menampilkan proyek STEM yang berfokus pada peningkatan literasi, numerasi, dan kesiapan kerja melalui pendekatan Design Thinking.
+            </p>
             <div class="hero-buttons">
-                <a href="solusi.html" class="btn btn-primary">Mulai Eksplorasi 🚀</a>
-                <button onclick="printReport()" class="btn btn-secondary">Unduh Laporan (PDF) 📄</button>
+                <a href="proses.html" class="btn btn-primary">Explore Project <i class="fas fa-arrow-right"></i></a>
+                <button onclick="printReport()" class="btn btn-secondary">Download PDF <i class="fas fa-file-pdf"></i></button>
             </div>
         </div>
     </section>
 
-    <!-- TENTANG PROYEK SECTION -->
+    <!-- ABOUT PROJECT SECTION -->
     <section class="container reveal">
         <div class="section-header">
-            <h2 class="section-title">Tentang Proyek</h2>
-            <p class="section-subtitle">Bagaimana pendidikan berkualitas dapat membuka pintu menuju pertumbuhan ekonomi dan pekerjaan layak.</p>
+            <h2 class="section-title">About the Project</h2>
+            <p class="section-subtitle">Memahami pentingnya sasaran pembangunan berkelanjutan dan kontribusi rancangan inovasi kami.</p>
         </div>
         
-        <div class="grid-2">
-            <div class="card">
-                <h3>📚 Fokus SDG 4: Pendidikan Berkualitas</h3>
-                <p>Menjamin pendidikan yang inklusif dan merata serta meningkatkan kesempatan belajar sepanjang hayat untuk semua. Fokus khusus proyek ini adalah <strong>Target 4.6</strong>, yang bertujuan memastikan seluruh remaja dan mayoritas dewasa mencapai literasi dan numerasi yang mumpuni pada tahun 2030.</p>
+        <div class="about-grid-content">
+            <div class="grid-2">
+                <div>
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem;"><i class="fas fa-globe"></i> Apa itu SDGs?</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Sustainable Development Goals (SDGs) atau Tujuan Pembangunan Berkelanjutan adalah 17 agenda global yang ditetapkan oleh Perserikatan Bangsa-Bangsa (PBB) pada tahun 2015 untuk dicapai pada tahun 2030. Agenda ini berkomitmen mengakhiri kemiskinan, melindungi planet bumi, dan menjamin kedamaian bagi seluruh umat manusia.</p>
+                    
+                    <h3 style="color: var(--cyan); margin-bottom: 1rem;"><i class="fas fa-graduation-cap"></i> Pentingnya SDG 4 (Pendidikan Berkualitas)</h3>
+                    <p style="font-size: 0.95rem;">SDG 4 bertujuan untuk menjamin pendidikan berkualitas yang inklusif dan merata serta meningkatkan kesempatan belajar sepanjang hayat untuk semua. Pendidikan dasar yang kuat, khususnya kemampuan membaca fungsional dan logika berpikir matematis (Target 4.6), merupakan bekal mutlak bagi pembangunan kognitif individu.</p>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem;"><i class="fas fa-briefcase"></i> Pentingnya SDG 8 (Pekerjaan Layak)</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">SDG 8 bertujuan mendorong pertumbuhan ekonomi inklusif dan berkelanjutan, kesempatan kerja penuh dan produktif, serta pekerjaan layak bagi semua (Target 8.5). Ketersediaan lapangan kerja yang layak membebaskan masyarakat dari jeratan kemiskinan dan meningkatkan ketahanan ekonomi negara.</p>
+                    
+                    <h3 style="color: var(--cyan); margin-bottom: 1rem;"><i class="fas fa-diagram-project"></i> Korelasi Pendidikan & Pekerjaan Layak</h3>
+                    <p style="font-size: 0.95rem;">Ada korelasi langsung antara pencapaian literasi dan numerasi dasar dengan kesiapan kerja seseorang. Siswa yang menguasai konsep dasar berpikir logis (numerasi) dan analitis (literasi) akan jauh lebih mudah beradaptasi dengan disrupsi industri modern dan otomatisasi kerja. Dengan mendongkrak pencapaian pendidikan dasar siswa (SDG 4), kita membangun landasan krusial menuju ketersediaan angkatan kerja terampil yang mandiri dan kompetitif (SDG 8).</p>
+                </div>
             </div>
-            
-            <div class="card">
-                <h3>💼 Fokus SDG 8: Pekerjaan Layak & Pertumbuhan Ekonomi</h3>
-                <p>Meningkatkan pertumbuhan ekonomi yang inklusif dan berkelanjutan, kesempatan kerja yang produktif, serta pekerjaan yang layak untuk semua. Platform kami fokus pada <strong>Target 8.5</strong>, yaitu mencapai pekerjaan layak bagi laki-laki dan perempuan, termasuk kaum muda dan penyandang disabilitas, serta kesetaraan upah.</p>
-            </div>
-        </div>
-
-        <div class="card" style="margin-top: 2rem; border-left: 5px solid var(--cyan);">
-            <h3>🔗 Hubungan Pendidikan Berkualitas dan Pekerjaan Layak</h3>
-            <p>Ada korelasi kuat antara tingkat literasi-numerasi seseorang dengan peluangnya memperoleh pekerjaan yang layak di era modern. Tanpa fondasi literasi dan numerasi yang kokoh (SDG 4), generasi muda akan kesulitan menyerap keterampilan tingkat lanjut yang dibutuhkan industri, yang pada akhirnya memicu pengangguran terdidik dan menghambat pertumbuhan ekonomi (SDG 8). <strong>SmartFun Learning Corner</strong> hadir sebagai jembatan interaktif untuk menyelaraskan kedua tujuan penting ini.</p>
         </div>
     </section>
 
@@ -89,11 +99,11 @@
                 </div>
                 <div class="stat-item">
                     <span class="stat-number counter" data-target="50%">0%</span>
-                    <span class="stat-label">Tantangan Literasi & Numerasi</span>
+                    <span class="stat-label">Tantangan Responden</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number counter" data-target="5%">0%</span>
-                    <span class="stat-label">Pertumbuhan Ekonomi Indonesia</span>
+                    <span class="stat-label">Pertumbuhan Ekonomi</span>
                 </div>
             </div>
         </div>
@@ -102,95 +112,131 @@
     <!-- 17 SDGs SECTION -->
     <section class="container reveal">
         <div class="section-header">
-            <h2 class="section-title">17 Sustainable Development Goals (SDGs)</h2>
-            <p class="section-subtitle">Tujuan Pembangunan Berkelanjutan dari PBB. Hover pada setiap kotak untuk melihat nama tujuan. Sorotan khusus diberikan pada SDG 4 dan SDG 8 yang menjadi inti proyek ini.</p>
+            <h2 class="section-title">17 Sustainable Development Goals</h2>
+            <p class="section-subtitle">Mengenal 17 tujuan pembangunan berkelanjutan yang ditetapkan oleh Perserikatan Bangsa-Bangsa.</p>
         </div>
 
-        <div class="sdg-grid">
-            <div class="sdg-box">
-                <span class="sdg-num">1</span>
-                <span class="sdg-icon">❌</span>
-                <span class="sdg-title">No Poverty</span>
+        <div class="sdg-grid-layout">
+            <!-- SDG 1 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg1.png" alt="SDG 1" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-01.png';">
+                <div class="sdg-card-num">SDG 1</div>
+                <h3 class="sdg-card-title">No Poverty</h3>
+                <p class="sdg-card-desc">Mengakhiri segala bentuk kemiskinan di semua tempat.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">2</span>
-                <span class="sdg-icon">🍎</span>
-                <span class="sdg-title">Zero Hunger</span>
+            <!-- SDG 2 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg2.png" alt="SDG 2" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-02.png';">
+                <div class="sdg-card-num">SDG 2</div>
+                <h3 class="sdg-card-title">Zero Hunger</h3>
+                <p class="sdg-card-desc">Mengakhiri kelaparan, mencapai ketahanan pangan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">3</span>
-                <span class="sdg-icon">❤️</span>
-                <span class="sdg-title">Good Health</span>
+            <!-- SDG 3 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg3.png" alt="SDG 3" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-03.png';">
+                <div class="sdg-card-num">SDG 3</div>
+                <h3 class="sdg-card-title">Good Health</h3>
+                <p class="sdg-card-desc">Menjamin kehidupan sehat dan meningkatkan kesejahteraan.</p>
             </div>
-            <div class="sdg-box highlight-sdg4" title="Fokus Utama Proyek">
-                <span class="sdg-num" style="color: var(--sdg-4-color);">4</span>
-                <span class="sdg-icon">📚</span>
-                <span class="sdg-title">Quality Education</span>
+            <!-- SDG 4 (HIGHLIGHTED) -->
+            <div class="sdg-card highlighted-sdg">
+                <span class="sdg-highlight-badge">Project Focus</span>
+                <img class="sdg-card-img" src="images/sdgs/sdg4.png" alt="SDG 4" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-04.png';">
+                <div class="sdg-card-num" style="color: var(--primary-blue);">SDG 4</div>
+                <h3 class="sdg-card-title">Quality Education</h3>
+                <p class="sdg-card-desc">Menjamin pendidikan inklusif, adil, dan berkualitas bagi semua.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">5</span>
-                <span class="sdg-icon">⚖️</span>
-                <span class="sdg-title">Gender Equality</span>
+            <!-- SDG 5 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg5.png" alt="SDG 5" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-05.png';">
+                <div class="sdg-card-num">SDG 5</div>
+                <h3 class="sdg-card-title">Gender Equality</h3>
+                <p class="sdg-card-desc">Mencapai kesetaraan gender dan memberdayakan kaum perempuan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">6</span>
-                <span class="sdg-icon">💧</span>
-                <span class="sdg-title">Clean Water</span>
+            <!-- SDG 6 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg6.png" alt="SDG 6" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-06.png';">
+                <div class="sdg-card-num">SDG 6</div>
+                <h3 class="sdg-card-title">Clean Water</h3>
+                <p class="sdg-card-desc">Menjamin ketersediaan air bersih dan sanitasi layak.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">7</span>
-                <span class="sdg-icon">⚡</span>
-                <span class="sdg-title">Clean Energy</span>
+            <!-- SDG 7 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg7.png" alt="SDG 7" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-07.png';">
+                <div class="sdg-card-num">SDG 7</div>
+                <h3 class="sdg-card-title">Clean Energy</h3>
+                <p class="sdg-card-desc">Menjamin akses energi terjangkau, andal, berkelanjutan.</p>
             </div>
-            <div class="sdg-box highlight-sdg8" title="Fokus Utama Proyek">
-                <span class="sdg-num" style="color: var(--sdg-8-color);">8</span>
-                <span class="sdg-icon">💼</span>
-                <span class="sdg-title">Decent Work</span>
+            <!-- SDG 8 (HIGHLIGHTED) -->
+            <div class="sdg-card highlighted-sdg">
+                <span class="sdg-highlight-badge">Project Focus</span>
+                <img class="sdg-card-img" src="images/sdgs/sdg8.png" alt="SDG 8" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-08.png';">
+                <div class="sdg-card-num" style="color: var(--primary-blue);">SDG 8</div>
+                <h3 class="sdg-card-title">Decent Work</h3>
+                <p class="sdg-card-desc">Mendorong pertumbuhan ekonomi dan pekerjaan layak untuk semua.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">9</span>
-                <span class="sdg-icon">⚙️</span>
-                <span class="sdg-title">Industry & Infra</span>
+            <!-- SDG 9 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg9.png" alt="SDG 9" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-09.png';">
+                <div class="sdg-card-num">SDG 9</div>
+                <h3 class="sdg-card-title">Industry & Infra</h3>
+                <p class="sdg-card-desc">Membangun infrastruktur tangguh dan industri berkelanjutan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">10</span>
-                <span class="sdg-icon">🤝</span>
-                <span class="sdg-title">Reduced Inequality</span>
+            <!-- SDG 10 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg10.png" alt="SDG 10" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-10.png';">
+                <div class="sdg-card-num">SDG 10</div>
+                <h3 class="sdg-card-title">Reduced Inequality</h3>
+                <p class="sdg-card-desc">Mengurangi kesenjangan di dalam dan antar negara.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">11</span>
-                <span class="sdg-icon">🏙️</span>
-                <span class="sdg-title">Sustainable Cities</span>
+            <!-- SDG 11 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg11.png" alt="SDG 11" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-11.png';">
+                <div class="sdg-card-num">SDG 11</div>
+                <h3 class="sdg-card-title">Sustainable Cities</h3>
+                <p class="sdg-card-desc">Menjadikan kota inklusif, aman, tangguh, berkelanjutan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">12</span>
-                <span class="sdg-icon">🔄</span>
-                <span class="sdg-title">Responsible Consumption</span>
+            <!-- SDG 12 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg12.png" alt="SDG 12" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-12.png';">
+                <div class="sdg-card-num">SDG 12</div>
+                <h3 class="sdg-card-title">Consumption</h3>
+                <p class="sdg-card-desc">Menjamin pola konsumsi dan produksi berkelanjutan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">13</span>
-                <span class="sdg-icon">🌍</span>
-                <span class="sdg-title">Climate Action</span>
+            <!-- SDG 13 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg13.png" alt="SDG 13" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-13.png';">
+                <div class="sdg-card-num">SDG 13</div>
+                <h3 class="sdg-card-title">Climate Action</h3>
+                <p class="sdg-card-desc">Mengambil tindakan cepat untuk mengatasi perubahan iklim.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">14</span>
-                <span class="sdg-icon">🐟</span>
-                <span class="sdg-title">Life Below Water</span>
+            <!-- SDG 14 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg14.png" alt="SDG 14" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-14.png';">
+                <div class="sdg-card-num">SDG 14</div>
+                <h3 class="sdg-card-title">Life Below Water</h3>
+                <p class="sdg-card-desc">Melestarikan ekosistem samudra, laut, sumber daya kelautan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">15</span>
-                <span class="sdg-icon">🌳</span>
-                <span class="sdg-title">Life on Land</span>
+            <!-- SDG 15 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg15.png" alt="SDG 15" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-15.png';">
+                <div class="sdg-card-num">SDG 15</div>
+                <h3 class="sdg-card-title">Life on Land</h3>
+                <p class="sdg-card-desc">Melindungi hutan, melawan desertifikasi dan degradasi lahan.</p>
             </div>
-            <div class="sdg-box">
-                <span class="sdg-num">16</span>
-                <span class="sdg-icon">🕊️</span>
-                <span class="sdg-title">Peace & Justice</span>
+            <!-- SDG 16 -->
+            <div class="sdg-card">
+                <img class="sdg-card-img" src="images/sdgs/sdg16.png" alt="SDG 16" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-16.png';">
+                <div class="sdg-card-num">SDG 16</div>
+                <h3 class="sdg-card-title">Peace & Justice</h3>
+                <p class="sdg-card-desc">Mendorong masyarakat damai, adil, inklusif.</p>
             </div>
-            <div class="sdg-box" style="grid-column: span 2;">
-                <span class="sdg-num">17</span>
-                <span class="sdg-icon">🔗</span>
-                <span class="sdg-title">Partnerships</span>
+            <!-- SDG 17 -->
+            <div class="sdg-card" style="grid-column: span 1;">
+                <img class="sdg-card-img" src="images/sdgs/sdg17.png" alt="SDG 17" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/UNStats/SDGs-help-desk/master/images/SDG-symbols/Goal-17.png';">
+                <div class="sdg-card-num">SDG 17</div>
+                <h3 class="sdg-card-title">Partnerships</h3>
+                <p class="sdg-card-desc">Memperkuat kemitraan global untuk pembangunan.</p>
             </div>
         </div>
     </section>
@@ -199,8 +245,8 @@
     <footer>
         <div class="footer-grid">
             <div class="footer-brand">
-                <h2>🎓 SmartFun Learning Corner</h2>
-                <p>Solusi Pembelajaran Interaktif untuk Meningkatkan Literasi, Numerasi, dan Kesiapan Kerja Generasi Masa Depan. Proyek STEM Universitas berbasis Design Thinking.</p>
+                <h2>🎓 Literacy & Future Skills Project</h2>
+                <p>Website presentasi proyek STEM universitas yang berfokus pada peningkatan literasi, numerasi, dan kesiapan kerja melalui pendekatan Design Thinking.</p>
             </div>
             <div class="footer-col">
                 <h3>Navigasi Cepat</h3>
@@ -224,17 +270,17 @@
                 <ul>
                     <li><a href="refleksi.html">Refleksi Proyek</a></li>
                     <li><a href="referensi.html">Referensi APA 7</a></li>
-                    <li><a href="#" onclick="printReport(); return false;">Cetak Laporan PDF 📄</a></li>
+                    <li><a href="#" onclick="printReport(); return false;">Download PDF 📄</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SmartFun Learning Corner | Proyek STEM Universitas. Didesain dengan penuh perhatian.</p>
+            <p>&copy; 2026 Literacy & Future Skills Project | Capstone STEM Universitas. Didesain secara profesional.</p>
         </div>
     </footer>
 
     <!-- BACK TO TOP BUTTON -->
-    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">▲</button>
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-chevron-up"></i></button>
 
     <script src="main.js"></script>
 </body>
